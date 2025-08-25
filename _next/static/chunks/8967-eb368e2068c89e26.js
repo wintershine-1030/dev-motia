@@ -638,7 +638,7 @@
             var t;
             let {config: r, src: n, width: i, quality: o} = e
               , l = o || (null == (t = r.qualities) ? void 0 : t.reduce( (e, t) => Math.abs(t - 75) < Math.abs(e - 75) ? t : e)) || 75;
-            return r.path + "?url=" + encodeURIComponent(n) + "&w=" + i + "&q=" + l + (n.startsWith("/_next/static/media/") && 1 ? "&dpl=dpl_5DP7TUT9k7fgfLs2h1WpiztW4x5v" : "")
+            return n.startsWith("/_next/static/media/") ? n : r.path + "/" + n.replace(/^\//, "")
         }
         Object.defineProperty(t, "__esModule", {
             value: !0
