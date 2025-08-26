@@ -11,12 +11,12 @@
         vp: () => n,
         yN: () => s,
       });
-      let s = "https://discord.gg/motia",
-        r = "https://github.com/MotiaDev/motia",
-        l = "https://x.com/motiadev",
-        a = "https://www.linkedin.com/company/motiadev",
-        o = "https://www.youtube.com/@motiadev",
-        n = "https://github.com/MotiaDev/motia-examples/tree/main/examples";
+      let s = "https://discord.gg/Obiya",
+        r = "https://github.com/ObiyaDev/Obiya",
+        l = "https://x.com/Obiyadev",
+        a = "https://www.linkedin.com/company/Obiyadev",
+        o = "https://www.youtube.com/@Obiyadev",
+        n = "https://github.com/ObiyaDev/Obiya-examples/tree/main/examples";
     },
     25938: (e, t, i) => {
       i.d(t, { A: () => b });
@@ -79,7 +79,7 @@
             children: e
               ? "Submitting..."
               : (0, s.jsxs)(s.Fragment, {
-                  children: ["Get early access to Motia Cloud ", n.u$],
+                  children: ["Get early access to Obiya Cloud ", n.u$],
                 }),
           });
         },
@@ -90,13 +90,13 @@
             children: [
               (0, s.jsx)(d.default, {
                 src: w.A,
-                alt: "Motia",
+                alt: "Obiya",
                 className: "mx-auto w-[120px]",
               }),
               (0, s.jsx)(l.L3, {
                 className:
                   "font-tasa pt-[20px] text-center text-[16px] text-white",
-                children: r || "Get early access to motia cloud today.",
+                children: r || "Get early access to Obiya cloud today.",
               }),
               (0, s.jsxs)("div", {
                 className: "flex flex-col gap-[12px] pt-[60px] pb-[40px]",
@@ -178,7 +178,7 @@
             children: [
               (0, s.jsx)(d.default, {
                 src: w.A,
-                alt: "Motia",
+                alt: "Obiya",
                 className: "mx-auto w-[120px]",
               }),
               (0, s.jsxs)("div", {
@@ -217,7 +217,7 @@
               (0, s.jsx)("p", {
                 className:
                   "mx-auto w-[270px] max-w-full pt-[20px] text-center text-[16px] text-white/60",
-                children: "Motia Cloud is coming soon.",
+                children: "Obiya Cloud is coming soon.",
               }),
             ],
           }),
@@ -1711,7 +1711,7 @@
                             className: "flex w-fit flex-col gap-[8px]",
                             children: [
                               (0, s.jsxs)(c(), {
-                                href: "https://vercel.com/blog/summer-2025-oss-program#motia",
+                                href: "https://vercel.com/blog/summer-2025-oss-program#Obiya",
                                 target: "_blank",
                                 className: "vercel-oss-button gap-2",
                                 children: [
@@ -1801,7 +1801,7 @@
                               (0, s.jsx)(r.default, {
                                 priority: !0,
                                 src: n.A,
-                                alt: "Motia Logo",
+                                alt: "Obiya Logo",
                               }),
                             ],
                           }),
@@ -1850,7 +1850,7 @@
                     className: "flex items-center gap-[14px] max-md:gap-[4px]",
                     children: [
                       (0, s.jsxs)(c(), {
-                        href: "https://vercel.com/blog/summer-2025-oss-program#motia",
+                        href: "https://vercel.com/blog/summer-2025-oss-program#Obiya",
                         target: "_blank",
                         className:
                           "vercel-oss-button inline-flex items-center gap-2 max-md:hidden mr-3 leading-none",
@@ -2020,7 +2020,7 @@
               }),
             t === x.CLOUD_COMING_SOON &&
               (0, s.jsxs)("button", {
-                "aria-label": "Click To Register For Motia Cloud",
+                "aria-label": "Click To Register For Obiya Cloud",
                 onClick: p,
                 className:
                   "flex cursor-pointer gap-[4px] font-sans text-[16px] text-white/60 transition-colors ease-in-out hover:text-white",
@@ -2030,7 +2030,7 @@
                       "rounded-[4px] bg-[#20ABFC]/12 px-[6px] text-[#088CFF]",
                     children: "Join Beta",
                   }),
-                  (0, s.jsx)("p", { children: "Motia Cloud" }),
+                  (0, s.jsx)("p", { children: "Obiya Cloud" }),
                 ],
               }),
             t === x.CLOUD_NAVBAR &&
@@ -2038,9 +2038,9 @@
                 onClick: p,
                 className:
                   "flex cursor-pointer items-center gap-[4px] bg-linear-to-r from-[#53B4FF] to-white bg-clip-text font-sans text-[16px] font-medium text-transparent",
-                "aria-label": "Click To Register For Motia Cloud ",
+                "aria-label": "Click To Register For Obiya Cloud ",
                 children: [
-                  (0, s.jsx)("p", { children: "Motia Cloud" }),
+                  (0, s.jsx)("p", { children: "Obiya Cloud" }),
                   " ",
                   n.TN,
                 ],
@@ -2057,7 +2057,7 @@
           [i, r] = (0, s.useState)(!0);
         return (
           (0, s.useEffect)(() => {
-            fetch("https://api.github.com/repos/MotiaDev/motia")
+            fetch("https://api.github.com/repos/ObiyaDev/Obiya")
               .then((e) => e.json())
               .then((e) => {
                 var i;
