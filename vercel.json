@@ -76,6 +76,78 @@
       "dest": "/docs/concepts/testing.html"
     },
     {
+      "src": "/docs/concepts/cli",
+      "dest": "/docs/concepts/cli.html"
+    },
+    {
+      "src": "/docs/concepts/deployment/getting-started",
+      "dest": "/docs/concepts/deployment/getting-started.html"
+    },
+    {
+      "src": "/docs/concepts/deployment/motia-cloud",
+      "dest": "/docs/concepts/deployment/motia-cloud.html"
+    },
+    {
+      "src": "/docs/concepts/deployment/self-hosted",
+      "dest": "/docs/concepts/deployment/self-hosted.html"
+    },
+    {
+      "src": "/docs/ai-guides/overview",
+      "dest": "/docs/ai-guides/overview.html"
+    },
+    {
+      "src": "/docs/ai-guides/setup-guide",
+      "dest": "/docs/ai-guides/setup-guide.html"
+    },
+    {
+      "src": "/docs/workbench/overview",
+      "dest": "/docs/workbench/overview.html"
+    },
+    {
+      "src": "/docs/workbench/ui-steps",
+      "dest": "/docs/workbench/ui-steps.html"
+    },
+    {
+      "src": "/docs/real-world-use-cases/gmail-automation",
+      "dest": "/docs/real-world-use-cases/gmail-automation.html"
+    },
+    {
+      "src": "/docs/real-world-use-cases/github-integration-workflow",
+      "dest": "/docs/real-world-use-cases/github-integration-workflow.html"
+    },
+    {
+      "src": "/docs/real-world-use-cases/finance-agent",
+      "dest": "/docs/real-world-use-cases/finance-agent.html"
+    },
+    {
+      "src": "/docs/real-world-use-cases/ai-deep-research-agent",
+      "dest": "/docs/real-world-use-cases/ai-deep-research-agent.html"
+    },
+    {
+      "src": "/docs/real-world-use-cases/trello-automation",
+      "dest": "/docs/real-world-use-cases/trello-automation.html"
+    },
+    {
+      "src": "/docs/examples/sentiment-analysis",
+      "dest": "/docs/examples/sentiment-analysis.html"
+    },
+    {
+      "src": "/docs/examples/multi-language-data-processing",
+      "dest": "/docs/examples/multi-language-data-processing.html"
+    },
+    {
+      "src": "/docs/examples/rag-docling-weaviate",
+      "dest": "/docs/examples/rag-docling-weaviate.html"
+    },
+    {
+      "src": "/docs/examples/uptime-discord-monitor",
+      "dest": "/docs/examples/uptime-discord-monitor.html"
+    },
+    {
+      "src": "/docs/contribution/how-to-contribute",
+      "dest": "/docs/contribution/how-to-contribute.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
