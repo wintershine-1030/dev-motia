@@ -13,7 +13,6 @@
       });
       let r = "https://github.com/ObiyaDev/Obiya",
         l = "https://x.com/Obiyadev",
-        a = "https://www.linkedin.com/company/Obiyadev",
         o = "https://www.youtube.com/@Obiyadev",
         n = "https://github.com/ObiyaDev/Obiya-examples/tree/main/examples";
     },
@@ -528,14 +527,7 @@
                               className:
                                 "flex items-center justify-end gap-[12px] mb-[24px] max-lg:justify-start",
                               children: [
-                                (0, s.jsx)(h(), {
-                                  href: p.Kn,
-                                  target: "_blank",
-                                  className:
-                                    "text-white/60 transition-colors ease-in-out hover:text-white",
-                                  "aria-label": "Follow us on LinkedIn",
-                                  children: x.Gh,
-                                }),
+                               
                                 (0, s.jsx)(h(), {
                                   href: p.Nz,
                                   target: "_blank",
