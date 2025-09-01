@@ -26,6 +26,31 @@
     {
       "src": "/docs/getting-started/quick-start",
       "dest": "/docs/getting-started/quick-start.html"
+    },
+    {
+      "src": "/docs/getting-started/build-your-first-step/build-your-first-background-jobs",
+      "dest": "/docs/getting-started/build-your-first-step/build-your-first-background-jobs.html"
+    },
+    {
+      "src": "/docs/getting-started/build-your-first-step/creating-your-first-rest-api",
+      "dest": "/docs/getting-started/build-your-first-step/creating-your-first-rest-api.html"
+    },
+    {
+      "src": "/docs/concepts/steps/api",
+      "dest": "/docs/concepts/steps/api.html"
+    },
+    {
+      "src": "/docs/concepts/steps/event",
+      "dest": "/docs/concepts/steps/event.html"
+    },
+    {
+      "src": "/docs/concepts/steps/defining-steps",
+      "dest": "/docs/concepts/steps/defining-steps.html"
+    },
+
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
     
   ]
