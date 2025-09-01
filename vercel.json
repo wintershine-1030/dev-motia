@@ -47,7 +47,34 @@
       "src": "/docs/concepts/steps/defining-steps",
       "dest": "/docs/concepts/steps/defining-steps.html"
     },
-
+    {
+      "src": "/docs/concepts/steps/cron",
+      "dest": "/docs/concepts/steps/cron.html"
+    },
+    {
+      "src": "/docs/concepts/flows-and-visualization",
+      "dest": "/docs/concepts/flows-and-visualization.html"
+    },
+    {
+      "src": "/docs/concepts/state-management",
+      "dest": "/docs/concepts/state-management.html"
+    },
+    {
+      "src": "/docs/concepts/environment-variables",
+      "dest": "/docs/concepts/environment-variables.html"
+    },
+    {
+      "src": "/docs/concepts/streams",
+      "dest": "/docs/concepts/streams.html"
+    },
+    {
+      "src": "/docs/concepts/logging-and-debugging",
+      "dest": "/docs/concepts/logging-and-debugging.html"
+    },
+    {
+      "src": "/docs/concepts/testing",
+      "dest": "/docs/concepts/testing.html"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.html"
