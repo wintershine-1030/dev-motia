@@ -24,8 +24,8 @@
       "dest": "/_next/$1"
     },
     {
-      "src": "/docs/getting-started/(.*)",
-      "dest": "/docs/getting-started/$1"
+      "src": "/docs/getting-started/quick-start",
+      "dest": "/docs/getting-started/quick-start.html"
     },
     
     {
