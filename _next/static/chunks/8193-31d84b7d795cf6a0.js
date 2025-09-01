@@ -11,8 +11,7 @@
         vp: () => n,
         yN: () => s,
       });
-      let s = "https://discord.gg/Obiya",
-        r = "https://github.com/ObiyaDev/Obiya",
+      let r = "https://github.com/ObiyaDev/Obiya",
         l = "https://x.com/Obiyadev",
         a = "https://www.linkedin.com/company/Obiyadev",
         o = "https://www.youtube.com/@Obiyadev",
@@ -356,17 +355,7 @@
               (0, s.jsxs)("div", {
                 className: "w-fit",
                 children: [
-                  (0, s.jsxs)(h(), {
-                    href: p.yN,
-                    target: "_blank",
-                    className:
-                      "flex cursor-pointer items-center gap-[16px] py-[8px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white",
-                    children: [
-                      x.Mg,
-                      " ",
-                      (0, s.jsx)("p", { children: "Join our Discord" }),
-                    ],
-                  }),
+                  
                   (0, s.jsxs)(h(), {
                     href: p.nE,
                     target: "_blank",
@@ -554,14 +543,6 @@
                                     "text-white/60 transition-colors ease-in-out hover:text-white",
                                   "aria-label": "Follow us on X (Twitter)",
                                   children: x.Xn,
-                                }),
-                                (0, s.jsx)(h(), {
-                                  href: p.yN,
-                                  target: "_blank",
-                                  className:
-                                    "text-white/60 transition-colors ease-in-out hover:text-white",
-                                  "aria-label": "Join our Discord",
-                                  children: x.Mg,
                                 }),
                                 (0, s.jsx)(h(), {
                                   href: p.TB,
@@ -1736,19 +1717,6 @@
                                 ],
                               }),
                               (0, s.jsxs)(c(), {
-                                href: x.yN,
-                                target: "_blank",
-                                className:
-                                  "flex cursor-pointer items-center gap-[16px] py-[8px] text-[16px] text-white",
-                                children: [
-                                  d.Mg,
-                                  " ",
-                                  (0, s.jsx)("p", {
-                                    children: "Join our Discord",
-                                  }),
-                                ],
-                              }),
-                              (0, s.jsxs)(c(), {
                                 href: x.nE,
                                 target: "_blank",
                                 className:
@@ -1877,14 +1845,6 @@
                             children: "Vercel OSS 2025",
                           }),
                         ],
-                      }),
-                      (0, s.jsx)(c(), {
-                        "aria-label": "Visit Discord",
-                        href: x.yN,
-                        target: "_blank",
-                        className:
-                          "flex cursor-pointer items-center gap-[16px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white max-md:hidden",
-                        children: d.Mg,
                       }),
                       (0, s.jsxs)(c(), {
                         href: x.nE,
