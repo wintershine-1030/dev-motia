@@ -26,11 +26,7 @@
     {
       "src": "/docs/getting-started/quick-start",
       "dest": "/docs/getting-started/quick-start.html"
-    },
-    
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
     }
+    
   ]
 }
