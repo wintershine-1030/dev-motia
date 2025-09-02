@@ -8,7 +8,9 @@
     var o = (t[a] = { exports: {} }),
       c = !0;
     try {
-      e[a].call(o.exports, o, o.exports, r), (c = !1);
+      if (e[a] && typeof e[a].call === 'function') {
+        e[a].call(o.exports, o, o.exports, r), (c = !1);
+      }
     } finally {
       c && delete t[a];
     }
