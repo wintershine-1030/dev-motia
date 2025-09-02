@@ -13,7 +13,7 @@
       });
       let r = "https://github.com/ObiyaDev/Obiya",
         l = "https://x.com/Obiyadev",
-        o = "https://www.youtube.com/@Obiyadev",
+        o = null,
         n = "https://github.com/ObiyaDev/Obiya-examples/tree/main/examples";
     },
     25938: (e, t, i) => {
@@ -537,13 +537,13 @@
                                   children: x.Xn,
                                 }),
                                 (0, s.jsx)(h(), {
-                                  href: p.TB,
+                                  href: null,
                                   target: "_blank",
                                   className:
                                     "text-white/60 transition-colors ease-in-out hover:text-white",
                                   "aria-label":
-                                    "Subscribe to our YouTube channel",
-                                  children: x.hp,
+                                    "",
+                                  children: null,
                                 }),
                               ],
                             }),
