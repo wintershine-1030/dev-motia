@@ -179,7 +179,6 @@
       let n = r(96713)._(r(93723)),
         o = /https?|ftp|gopher|file/;
       function u(e) {
-        if (!e) return null;
         let { auth: t, hostname: r } = e,
           u = e.protocol || "",
           i = e.pathname || "",
