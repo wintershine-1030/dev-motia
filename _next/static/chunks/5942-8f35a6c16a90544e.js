@@ -8178,7 +8178,7 @@
                                     if ("function" == typeof a) {
                                         p.callback = null,
                                         h = p.priorityLevel;
-                                        var i = a(p.expirationTime <= e);
+                                        var i = a && typeof a === 'function' ? a(p.expirationTime <= e) : null;
                                         if (e = t.unstable_now(),
                                         "function" == typeof i) {
                                             p.callback = i,
