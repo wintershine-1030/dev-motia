@@ -148,6 +148,26 @@
       "dest": "/docs/contribution/how-to-contribute.html"
     },
     {
+      "src": "/docs/getting-started/build-your-first-app",
+      "dest": "/docs/getting-started/build-your-first-app.html"
+    },
+    {
+      "src": "/docs/concepts",
+      "dest": "/docs/concepts.html"
+    },
+    {
+      "src": "/docs/real-world-use-cases",
+      "dest": "/docs/real-world-use-cases.html"
+    },
+    {
+      "src": "/docs/examples",
+      "dest": "/docs/examples.html"
+    },
+    {
+      "src": "/docs/community-resources",
+      "dest": "/docs/community-resources.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
