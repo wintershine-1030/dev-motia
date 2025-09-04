@@ -1698,6 +1698,10 @@
                               }),
                             ],
                           }),
+                          (0, s.jsxs)("div", {
+                            className: "flex w-fit flex-col gap-[8px]",
+                            children: [
+                              
                               (0, s.jsxs)(c(), {
                                 href: x.nE,
                                 target: "_blank",
@@ -1805,6 +1809,7 @@
                   (0, s.jsxs)("div", {
                     className: "flex items-center gap-[14px] max-md:gap-[4px]",
                     children: [
+                      
                       (0, s.jsxs)(c(), {
                         href: x.nE,
                         target: "_blank",
