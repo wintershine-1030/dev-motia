@@ -1698,28 +1698,6 @@
                               }),
                             ],
                           }),
-                          (0, s.jsxs)("div", {
-                            className: "flex w-fit flex-col gap-[8px]",
-                            children: [
-                              (0, s.jsxs)(c(), {
-                                href: "https://vercel.com/blog/summer-2025-oss-program#Obiya",
-                                target: "_blank",
-                                className: "vercel-oss-button gap-2",
-                                children: [
-                                  (0, s.jsx)("svg", {
-                                    "aria-label": "Vercel logomark",
-                                    height: "15",
-                                    role: "img",
-                                    viewBox: "0 0 74 64",
-                                    className: "fill-current",
-                                    children: (0, s.jsx)("path", {
-                                      d: "M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z",
-                                      fill: "white",
-                                    }),
-                                  }),
-                                  "Vercel OSS 2025",
-                                ],
-                              }),
                               (0, s.jsxs)(c(), {
                                 href: x.nE,
                                 target: "_blank",
@@ -1827,29 +1805,6 @@
                   (0, s.jsxs)("div", {
                     className: "flex items-center gap-[14px] max-md:gap-[4px]",
                     children: [
-                      (0, s.jsxs)(c(), {
-                        href: "https://vercel.com/blog/summer-2025-oss-program#Obiya",
-                        target: "_blank",
-                        className:
-                          "vercel-oss-button inline-flex items-center gap-2 max-md:hidden mr-3 leading-none",
-                        children: [
-                          (0, s.jsx)("svg", {
-                            "aria-label": "Vercel logomark",
-                            height: "12",
-                            role: "img",
-                            viewBox: "0 0 74 64",
-                            className: "fill-current block m-0 p-0",
-                            children: (0, s.jsx)("path", {
-                              d: "M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z",
-                              fill: "white",
-                            }),
-                          }),
-                          (0, s.jsx)("span", {
-                            className: "max-lg:hidden",
-                            children: "Vercel OSS 2025",
-                          }),
-                        ],
-                      }),
                       (0, s.jsxs)(c(), {
                         href: x.nE,
                         target: "_blank",
