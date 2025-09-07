@@ -1678,7 +1678,7 @@
                               "flex w-full flex-col gap-[16px] border-b-[1px] border-white/20 pb-[28px]",
                             children: [
                               (0, s.jsx)(c(), {
-                                href: "https://blog-motia.vercel.app",
+                                href: "https://blog.obiya.dev",
                                 target: "_blank",
                                 className: "text-[16px] text-white",
                                 children: "Blog",
@@ -1783,7 +1783,7 @@
                         className: "flex gap-[24px] max-md:hidden",
                         children: [
                           (0, s.jsx)(c(), {
-                            href: "https://blog-motia.vercel.app",
+                            href: "https://blog.obiya.dev",
                             target: "_blank",
                             className:
                               "text-[16px] text-white/60 transition-colors ease-in-out hover:text-white",
