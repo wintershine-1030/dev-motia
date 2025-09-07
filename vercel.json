@@ -16,6 +16,10 @@
       "dest": "/manifesto.html"
     },
     {
+      "src": "/privacy-policy",
+      "dest": "/privacy-policy.html"
+    },
+    {
       "src": "/rive/(.*)",
       "dest": "/rive/$1"
     },
