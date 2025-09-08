@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -267,443 +267,975 @@
       nomodule=""
     ></script>
   </head>
-    <body class="__variable_356fc9 __variable_9ef920 __variable_ed711f w-screen overflow-x-hidden antialiased">
-        <script>
-            ( (e, t, r, n, o, a, i, u) => {
-                let l = document.documentElement
-                  , s = ["light", "dark"];
-                function c(t) {
-                    var r;
-                    (Array.isArray(e) ? e : [e]).forEach(e => {
-                        let r = "class" === e
-                          , n = r && a ? o.map(e => a[e] || e) : o;
-                        r ? (l.classList.remove(...n),
-                        l.classList.add(a && a[t] ? a[t] : t)) : l.setAttribute(e, t)
-                    }
-                    ),
-                    r = t,
-                    u && s.includes(r) && (l.style.colorScheme = r)
-                }
-                if (n)
-                    c(n);
-                else
-                    try {
-                        let e = localStorage.getItem(t) || r
-                          , n = i && "system" === e ? window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light" : e;
-                        c(n)
-                    } catch (e) {}
-            }
-            )("class", "theme", "system", null, ["light", "dark"], null, true, true)
-        </script>
-        <div class="relative flex w-full flex-col items-center bg-black">
-            <div class="fixed top-0 z-30 flex w-full justify-center border-b-[1px] border-white/20" style="opacity:0;transform:translateY(-20px)">
-                <nav class="z-2 flex w-full max-w-[1200px] items-center justify-between py-[18px] max-xl:px-[16px] max-sm:border-b-[1px] max-sm:border-white/20 max-sm:py-[11px]">
-                    <div class="flex items-center gap-[54px]">
-                        <div class="flex w-[94px] flex-col">
-                            <a aria-label="Go To Home" href="/">
-                                <img alt="Motia Logo" width="2470" height="543" decoding="async" data-nimg="1" style="color:transparent" srcSet="/_next/static/media/logoFull.a0c32ce7.png 1x" src="/_next/static/media/logoFull.a0c32ce7.png"/>
-                            </a>
-                            <div class="relative bottom-[-24px] flex items-center gap-[4px]">
-                                <div class="h-[2px] w-[24px] bg-[#088CFF]"></div>
-                                <div class="h-[2px] grow bg-white"></div>
-                            </div>
-                        </div>
-                        <div class="flex gap-[24px] max-md:hidden">
-                            <a target="_blank" class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="https://blog.obiya.dev">Blog</a>
-                            <a class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="/docs">Docs</a>
-                            <a class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="/manifesto">Manifesto</a>
-                            <button class="flex cursor-pointer items-center gap-[4px] bg-linear-to-r from-[#53B4FF] to-white bg-clip-text font-sans text-[16px] font-medium text-transparent" aria-label="Click To Register For Motia Cloud ">
-                                <p>Motia Cloud</p>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                                    <path d="M2 8.5C5 8.5 8 5.5 8 2.5C8 5.5 11 8.5 14 8.5C11 8.5 8 11.5 8 14.5C8 11.5 5 8.5 2 8.5Z" fill="white"></path>
-                                    <path d="M1.33301 13.5002C1.88856 13.5002 2.99967 12.389 2.99967 11.8335C2.99967 12.389 4.11079 13.5002 4.66634 13.5002C4.11079 13.5002 2.99967 14.6113 2.99967 15.1668C2.99967 14.6113 1.88856 13.5002 1.33301 13.5002Z" fill="white"></path>
-                                    <path d="M10.667 3.8335C11.3337 3.8335 12.667 2.50016 12.667 1.8335C12.667 2.50016 14.0003 3.8335 14.667 3.8335C14.0003 3.8335 12.667 5.16683 12.667 5.8335C12.667 5.16683 11.3337 3.8335 10.667 3.8335Z" fill="white"></path>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-[14px] max-md:gap-[4px]">
-                        <a target="_blank" class="vercel-oss-button inline-flex items-center gap-2 max-md:hidden mr-3 leading-none" href="https://vercel.com/blog/summer-2025-oss-program#motia">
-                            <svg aria-label="Vercel logomark" height="12" role="img" viewBox="0 0 74 64" class="fill-current block m-0 p-0">
-                                <path d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z" fill="white"></path>
-                            </svg>
-                            <span class="max-lg:hidden">Vercel OSS 2025</span>
-                        </a>
-                        <a aria-label="Visit Discord" target="_blank" class="flex cursor-pointer items-center gap-[16px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white max-md:hidden" href="https://discord.gg/motia">
-                            <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M16.0847 1.16134C14.8528 0.614454 13.5528 0.224352 12.2171 0.000797362C12.205 -0.00117262 12.1925 0.000528787 12.1815 0.00566772C12.1704 0.0108066 12.1613 0.0191307 12.1553 0.0294952C11.9879 0.316474 11.8026 0.691843 11.6732 0.985709C10.2335 0.774678 8.76909 0.774678 7.32937 0.985709C7.1856 0.658076 7.02224 0.3388 6.84013 0.0294952C6.83417 0.0191307 6.82503 0.0108066 6.81397 0.00566772C6.80291 0.000528787 6.79048 -0.00117262 6.77838 0.000797362C5.44246 0.223493 4.14216 0.613785 2.91073 1.16134C2.90014 1.16514 2.8913 1.17247 2.8858 1.182C0.422946 4.7394 -0.252734 8.20955 0.0785748 11.6361C0.0809497 11.6529 0.0892621 11.6671 0.103512 11.6785C1.53796 12.705 3.14201 13.4891 4.84752 13.9973C4.85957 14.001 4.87251 14.0009 4.88447 13.997C4.89643 13.993 4.90678 13.9855 4.91402 13.9755C5.28056 13.4934 5.60435 12.9849 5.88539 12.4499C5.89123 12.4389 5.89323 12.4264 5.89109 12.4142C5.88895 12.402 5.88278 12.3908 5.87351 12.3822L5.85214 12.3696C5.34076 12.179 4.8453 11.9507 4.37015 11.6866C4.35689 11.6793 4.34703 11.6674 4.34261 11.6533C4.33818 11.6392 4.33954 11.624 4.34641 11.6108L4.36422 11.589C4.46476 11.5163 4.56292 11.4417 4.65871 11.3652C4.66711 11.3586 4.67718 11.3545 4.68784 11.353C4.69851 11.3516 4.70938 11.353 4.71928 11.3571C7.82931 12.73 11.1958 12.73 14.2679 11.3571C14.2781 11.3526 14.2894 11.3509 14.3005 11.3523C14.3117 11.3538 14.3222 11.3582 14.3308 11.3652C14.4266 11.4417 14.5248 11.5163 14.6253 11.589C14.6337 11.5945 14.6404 11.602 14.6449 11.6108C14.6494 11.6196 14.6516 11.6293 14.6511 11.6391C14.6506 11.6489 14.6475 11.6584 14.6422 11.6667C14.6369 11.675 14.6294 11.6818 14.6205 11.6866C14.1474 11.9548 13.6512 12.183 13.1374 12.3684C13.1292 12.3713 13.1218 12.3759 13.1156 12.3818C13.1094 12.3878 13.1047 12.395 13.1018 12.4029C13.0989 12.4105 13.0977 12.4187 13.0983 12.4268C13.0989 12.4349 13.1013 12.4428 13.1053 12.4499C13.3903 12.9837 13.7169 13.4934 14.0755 13.9755C14.0827 13.9855 14.0931 13.993 14.105 13.997C14.117 14.0009 14.1299 14.001 14.142 13.9973C15.8509 13.4919 17.4577 12.7076 18.8931 11.6785C18.9003 11.6737 18.9062 11.6673 18.9105 11.66C18.9148 11.6527 18.9174 11.6445 18.9181 11.6361C19.3147 7.67462 18.2543 4.23316 16.1085 1.18315C16.1066 1.17794 16.1035 1.17325 16.0993 1.16945C16.0952 1.16566 16.0902 1.16287 16.0847 1.16134ZM6.3497 9.54916C5.41277 9.54916 4.64209 8.71807 4.64209 7.69872C4.64209 6.67937 5.39852 5.84713 6.3497 5.84713C7.308 5.84713 8.07155 6.68511 8.0573 7.69872C8.0573 8.71807 7.30087 9.54916 6.3497 9.54916ZM12.6624 9.54916C11.7266 9.54916 10.9548 8.71807 10.9548 7.69872C10.9548 6.67937 11.7112 5.84713 12.6624 5.84713C13.6207 5.84713 14.3854 6.68511 14.37 7.69872C14.37 8.71807 13.6207 9.54916 12.6624 9.54916Z" fill="white"></path>
-                            </svg>
-                        </a>
-                        <a target="_blank" class="font-tasa flex cursor-pointer items-center gap-[16px] rounded-[4px] border-[1px] border-white/20 bg-black/40 px-[8px] py-[4px] text-[16px] font-medium tracking-wider text-white transition-colors ease-in-out hover:text-white max-sm:gap-[8px] max-sm:py-[8px] max-sm:text-[14px]" href="https://github.com/MotiaDev/motia">
-                            <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9.00132 0.666016C4.39713 0.666016 0.667969 4.39518 0.667969 8.99935C0.667969 12.6868 3.05339 15.8014 6.36588 16.9056C6.78255 16.9785 6.9388 16.7285 6.9388 16.5098C6.9388 16.3118 6.92838 15.6556 6.92838 14.9577C4.83463 15.3431 4.29297 14.4473 4.1263 13.9785C4.03255 13.7389 3.6263 12.9993 3.27214 12.8014C2.98047 12.6452 2.5638 12.2598 3.26172 12.2493C3.91797 12.2389 4.38672 12.8535 4.54297 13.1035C5.29297 14.3639 6.49088 14.0098 6.97005 13.791C7.04297 13.2493 7.26172 12.8848 7.50132 12.6764C5.64713 12.4681 3.70964 11.7493 3.70964 8.56185C3.70964 7.6556 4.03255 6.9056 4.5638 6.32227C4.48047 6.11393 4.1888 5.25977 4.64714 4.11393C4.64714 4.11393 5.34505 3.89518 6.9388 4.9681C7.60548 4.7806 8.31382 4.68685 9.02215 4.68685C9.73048 4.68685 10.4388 4.7806 11.1055 4.9681C12.6992 3.88477 13.3972 4.11393 13.3972 4.11393C13.8555 5.25977 13.5638 6.11393 13.4805 6.32227C14.0117 6.9056 14.3347 7.64518 14.3347 8.56185C14.3347 11.7598 12.3867 12.4681 10.5326 12.6764C10.8347 12.9368 11.0951 13.4368 11.0951 14.2181C11.0951 15.3327 11.0847 16.2285 11.0847 16.5098C11.0847 16.7285 11.2409 16.9889 11.6576 16.9056C15.0497 15.7604 17.3337 12.5796 17.3347 8.99935C17.3347 4.39518 13.6055 0.666016 9.00132 0.666016Z" fill="white"></path>
-                            </svg>
-                            <p class="sm:-ml-[8px] max-lg:hidden">Github </p>
-                            <p class="text-white/40 max-lg:hidden">|</p>
-                            <div class="flex items-center gap-[6px] text-white">
-                                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M5.13678 0.787466C5.27974 0.477517 5.72026 0.477517 5.86322 0.787466L6.95797 3.16088C7.01624 3.2872 7.13595 3.37418 7.2741 3.39056L9.86964 3.6983C10.2086 3.73849 10.3447 4.15744 10.0941 4.38919L8.17517 6.16379C8.07304 6.25824 8.02731 6.39897 8.05443 6.53541L8.56381 9.09902C8.63033 9.43381 8.27395 9.69274 7.9761 9.52602L5.69538 8.24936C5.57399 8.18141 5.42601 8.18141 5.30462 8.24936L3.0239 9.52602C2.72605 9.69274 2.36967 9.43381 2.43619 9.09902L2.94557 6.53541C2.97269 6.39897 2.92696 6.25824 2.82483 6.16379L0.905872 4.38919C0.655272 4.15744 0.791399 3.73849 1.13036 3.6983L3.7259 3.39056C3.86405 3.37418 3.98376 3.2872 4.04203 3.16088L5.13678 0.787466Z" fill="white"></path>
-                                </svg>
-                                <p>
-                                    <span class="inline-block animate-pulse">----</span>
-                                </p>
-                            </div>
-                        </a>
-                        <button class="h-[40px] w-[40px] rounded-[4px] bg-white/10 p-[10px] md:hidden">
-                            <div class="flex h-full w-full flex-col items-end justify-center space-y-[5px]">
-                                <div class="h-[1.5px] w-[80%] bg-white"></div>
-                                <div class="h-[1.5px] w-full bg-white"></div>
-                                <div class="h-[1.5px] w-[50%] bg-white"></div>
-                            </div>
-                        </button>
-                    </div>
-                </nav>
+  <body
+    class="__variable_356fc9 __variable_9ef920 __variable_ed711f w-screen overflow-x-hidden antialiased"
+  >
+    <script>
+      ((e, t, r, n, o, a, i, u) => {
+        let l = document.documentElement,
+          s = ["light", "dark"];
+        function c(t) {
+          var r;
+          (Array.isArray(e) ? e : [e]).forEach((e) => {
+            let r = "class" === e,
+              n = r && a ? o.map((e) => a[e] || e) : o;
+            r
+              ? (l.classList.remove(...n),
+                l.classList.add(a && a[t] ? a[t] : t))
+              : l.setAttribute(e, t);
+          }),
+            (r = t),
+            u && s.includes(r) && (l.style.colorScheme = r);
+        }
+        if (n) c(n);
+        else
+          try {
+            let e = localStorage.getItem(t) || r,
+              n =
+                i && "system" === e
+                  ? window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark"
+                    : "light"
+                  : e;
+            c(n);
+          } catch (e) {}
+      })("class", "theme", "system", null, ["light", "dark"], null, true, true);
+    </script>
+    <div class="relative flex w-full flex-col items-center bg-black">
+      <div
+        class="fixed top-0 z-30 flex w-full justify-center border-b-[1px] border-white/20"
+        style="opacity: 0; transform: translateY(-20px)"
+      >
+        <nav
+          class="z-2 flex w-full max-w-[1200px] items-center justify-between py-[18px] max-xl:px-[16px] max-sm:border-b-[1px] max-sm:border-white/20 max-sm:py-[11px]"
+        >
+          <div class="flex items-center gap-[54px]">
+            <div class="flex w-[94px] flex-col">
+              <a aria-label="Go To Home" href="/">
+                <img
+                  alt="Motia Logo"
+                  width="2470"
+                  height="543"
+                  decoding="async"
+                  data-nimg="1"
+                  style="color: transparent"
+                  srcset="/_next/static/media/logoFull.a0c32ce7.png 1x"
+                  src="/_next/static/media/logoFull.a0c32ce7.png"
+                />
+              </a>
+              <div class="relative bottom-[-24px] flex items-center gap-[4px]">
+                <div class="h-[2px] w-[24px] bg-[#088CFF]"></div>
+                <div class="h-[2px] grow bg-white"></div>
+              </div>
             </div>
-            <img alt="Background Glow" aria-hidden="true" loading="lazy" width="1117" height="396" decoding="async" data-nimg="1" class="absolute top-0 right-0 max-w-full" style="color:transparent" src="/_next/static/media/bgManifestoPage.f5394aca.svg"/>
-            <div class="relative mx-auto w-full max-w-[1200px] pt-[160px] pb-[200px] max-md:px-[16px]">
-                <div class="mx-auto w-[660px] max-w-full">
-                    <h1 class="font-tasa text-[32px] leading-[1.25em] font-semibold tracking-[1.44px] text-white md:text-[40px] text-center">
-                        <span class="inline-block" style="opacity:0;filter:blur(6px);transform:translateY(6px)">Privacy
-                        <!-- -->
-                        </span>
-                        <span class="inline-block" style="opacity:0;filter:blur(6px);transform:translateY(6px)">Policy
-                        <!-- -->
-                        </span>
-                    </h1>
-                    <p class="text-center text-[20px] text-white/80 leading-[140%] font-sans mt-[24px]">
-                        Your privacy is fundamental to how we build Motia. This policy explains how we <span class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent">collect, use, and protect</span>
-                        your information.
-                    </p>
-                </div>
-                <div class="my-[72px] h-[1px] w-full bg-white/20"></div>
-                <div class="mx-auto flex w-full max-w-[760px] flex-col gap-[40px]">
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Information We Collect</h2>
-                        <p>
-                            We collect information to provide better services to all our users. The information we collect falls into <span class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent">three main categories</span>
-                            : account information, usage analytics, and support communications.
-                        </p>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Account Information</h2>
-                        <p>When you create a Motia account, we collect:</p>
-                        <ul class="list-disc space-y-[12px] ml-[20px] mt-[16px]">
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Basic Profile Data:</span>
-                                Email address, name, and account details and preferences
-                            </li>
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Billing Information:</span>
-                                Payment details for paid plans (processed securely by third-party providers)
-                            </li>
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Project Metadata:</span>
-                                Project names, configurations, and deployment settings
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Usage Analytics</h2>
-                        <p>
-                            To improve Motia, we collect <span class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent">completely anonymized usage analytics</span>
-                            . This includes command usage patterns, performance metrics, and error frequencies. All analytics data is aggregated and cannot be traced back to individual users.
-                        </p>
-                        <p class="mt-[16px]">
-                            You can disable analytics collection at any time. More details on this in our <a href="/telemetry" class="text-[#5AC5FF] hover:text-white underline">Telemetry page</a>
-                            .
-                        </p>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans relative overflow-hidden border-l-[3px] border-[#5AC5FF] bg-[#17181F] p-[32px]">
-                        <img alt="Privacy Glow" aria-hidden="true" loading="lazy" width="794" height="612" decoding="async" data-nimg="1" class="pointer-events-none absolute top-0 left-0 z-0" style="color:transparent" src="/_next/static/media/bgManifestoDeclaration.7c2bd6ee.svg"/>
-                        <div class="relative flex flex-col gap-[20px]">
-                            <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Data Protection Principles</h2>
-                            <p>
-                                We follow strict data protection principles designed to <span class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent">respect your privacy and maintain your trust</span>
-                                . These aren &#x27;t just policies - they &#x27;re commitments.
-                            </p>
-                            <ul class="list-inside list-disc space-y-[16px]">
-                                <li>
-                                    <span class="font-medium text-white">Minimal Data Collection:</span>
-                                    We only collect data that &#x27;s necessary to provide and improve our services.
-                                </li>
-                                <li>
-                                    <span class="font-medium text-white">Purpose Limitation:</span>
-                                    Data is used only for the purposes we &#x27;ve disclosed to you.
-                                </li>
-                                <li>
-                                    <span class="font-medium text-white">Data Minimization:</span>
-                                    We retain data only as long as necessary and delete it when it is no longer needed.
-                                </li>
-                                <li>
-                                    <span class="font-medium text-white">Security by Design:</span>
-                                    All systems are built with privacy and security as foundational requirements.
-                                </li>
-                            </ul>
-                        </div>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">How We Use Your Information</h2>
-                        <p>We use the information we collect to:</p>
-                        <ul class="list-disc space-y-[12px] ml-[20px] mt-[16px]">
-                            <li>Provide, maintain, and improve Motia services</li>
-                            <li>Process transactions and send related information</li>
-                            <li>Send technical notices, updates, and support messages</li>
-                            <li>Respond to your comments, questions, and customer service requests</li>
-                            <li>Develop new features and functionality</li>
-                            <li>Monitor and analyze trends, usage, and activities</li>
-                        </ul>
-                        <p class="mt-[16px]">
-                            <span class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent">We never sell your personal data</span>
-                            to third parties or use it for advertising purposes.
-                        </p>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Data Sharing and Disclosure</h2>
-                        <p>We may share your information in the following limited circumstances:</p>
-                        <ul class="list-disc space-y-[12px] ml-[20px] mt-[16px]">
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Service Providers:</span>
-                                With trusted third-party services that help us operate (hosting, payment processing, support)
-                            </li>
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Legal Requirements:</span>
-                                When required by law or to protect our rights and users &#x27;safety
-                            </li>
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Business Transfers:</span>
-                                In connection with mergers, acquisitions, or asset sales (with user notification)
-                            </li>
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">With Your Consent:</span>
-                                When you explicitly authorize us to share specific information
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Data Security</h2>
-                        <p>We implement comprehensive security measures to protect your information, including access controls, regular security audits, and employee training on data protection.</p>
-                        <p class="mt-[16px]">While we strive to protect your personal information, no method of transmission over the internet is 100% secure. We continuously improve our security practices and will notify you of any significant data breaches as required by law.</p>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Your Rights and Choices</h2>
-                        <p>You have several rights regarding your personal information:</p>
-                        <ul class="list-disc space-y-[12px] ml-[20px] mt-[16px]">
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Access:</span>
-                                Request a copy of the personal information we hold about you
-                            </li>
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Correction:</span>
-                                Update or correct inaccurate personal information
-                            </li>
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Deletion:</span>
-                                Request deletion of your personal information (subject to legal obligations)
-                            </li>
-                            <li>
-                                <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Opt-out:</span>
-                                Disable analytics collection and marketing communications
-                            </li>
-                        </ul>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">International Data Transfers</h2>
-                        <p>
-                            Motia operates globally, and your information may be transferred to and processed in countries other than your own. <span class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent">We ensure appropriate safeguards</span>
-                            are in place for international transfers, including standard contractual clauses and adequacy decisions.
-                        </p>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Children &#x27;s Privacy</h2>
-                        <p>Motia is not intended for use by children under 13 years of age. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us immediately.</p>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans">
-                        <h2 class="text-[24px] font-semibold text-white font-tasa mb-[20px]">Changes to This Policy</h2>
-                        <p>
-                            We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the &quot;Last Updated &quot;date. <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">Significant changes will be communicated</span>
-                            via email or prominent notice in the application.
-                        </p>
-                    </section>
-                    <section class="text-[18px] text-white/60 leading-[150%] font-sans mt-[-10px]">
-                        <p>
-                            Privacy isn &#x27;t just a policy for us, it &#x27;s a core value. We believe developers should have <span class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent">complete control over their data</span>
-                            and clear understanding of how it &#x27;s used to improve the tools they rely on.
-                        </p>
-                        <p class="mt-[20px]">
-                            Questions about this privacy policy or your data? Contact at <span class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium">mike@motia.dev</span>
-                        </p>
-                        <p class="mt-[16px] text-[16px] text-white/40">Last updated: July 2025</p>
-                    </section>
-                </div>
+            <div class="flex gap-[24px] max-md:hidden">
+              <a
+                target="_blank"
+                class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                href="https://blog.obiya.dev"
+                >Blog</a
+              >
+              <a
+                class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                href="/docs"
+                >Docs</a
+              >
+              <a
+                class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                href="/manifesto"
+                >Manifesto</a
+              >
+              <button
+                class="flex cursor-pointer items-center gap-[4px] bg-linear-to-r from-[#53B4FF] to-white bg-clip-text font-sans text-[16px] font-medium text-transparent"
+                aria-label="Click To Register For Motia Cloud "
+              >
+                <p>Motia Cloud</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="17"
+                  viewBox="0 0 16 17"
+                  fill="none"
+                >
+                  <path
+                    d="M2 8.5C5 8.5 8 5.5 8 2.5C8 5.5 11 8.5 14 8.5C11 8.5 8 11.5 8 14.5C8 11.5 5 8.5 2 8.5Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M1.33301 13.5002C1.88856 13.5002 2.99967 12.389 2.99967 11.8335C2.99967 12.389 4.11079 13.5002 4.66634 13.5002C4.11079 13.5002 2.99967 14.6113 2.99967 15.1668C2.99967 14.6113 1.88856 13.5002 1.33301 13.5002Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    d="M10.667 3.8335C11.3337 3.8335 12.667 2.50016 12.667 1.8335C12.667 2.50016 14.0003 3.8335 14.667 3.8335C14.0003 3.8335 12.667 5.16683 12.667 5.8335C12.667 5.16683 11.3337 3.8335 10.667 3.8335Z"
+                    fill="white"
+                  ></path>
+                </svg>
+              </button>
             </div>
-            <div class="relative flex w-full max-w-[1920px] justify-center">
-                <div class="pointer-events-none absolute top-[50px] z-0 flex h-[1px] w-full shrink items-center justify-center">
-                    <img alt="glow" loading="lazy" width="1440" height="783" decoding="async" data-nimg="1" class="w-full opacity-100" style="color:transparent" src="/_next/static/media/footerBlueGlow.bc4b08e2.svg"/>
-                </div>
-                <div class="relative flex h-[624px] w-[96%] flex-col items-center justify-end rounded-t-[8px] px-[91px] pt-[160px] max-lg:pt-[0px] max-sm:px-[16px]">
-                    <img alt="Footer Background" loading="lazy" width="1385" height="624" decoding="async" data-nimg="1" class="absolute top-0 left-0 z-0 h-full w-full rounded-t-[8px] object-cover object-top" style="color:transparent" src="/_next/static/media/bgFooter.bb7bcea2.svg"/>
-                    <div class="tile-bg fade-bottom-large absolute top-0 h-full w-full rounded-[inherit] border-[1px] border-white/40 bg-[#18191D] opacity-60"></div>
-                    <div class="relative z-3 flex h-full w-[1200px] max-w-full flex-col justify-between">
-                        <div class="flex h-full w-full gap-[26px] max-lg:flex-col max-lg:justify-center">
-                            <div class="flex w-full flex-col gap-[26px]">
-                                <p class="gradient-text-white font-tasa text-[28px] font-semibold">Join our community</p>
-                                <div class="w-fit">
-                                    <a target="_blank" class="flex cursor-pointer items-center gap-[16px] py-[8px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="https://discord.gg/motia">
-                                        <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M16.0847 1.16134C14.8528 0.614454 13.5528 0.224352 12.2171 0.000797362C12.205 -0.00117262 12.1925 0.000528787 12.1815 0.00566772C12.1704 0.0108066 12.1613 0.0191307 12.1553 0.0294952C11.9879 0.316474 11.8026 0.691843 11.6732 0.985709C10.2335 0.774678 8.76909 0.774678 7.32937 0.985709C7.1856 0.658076 7.02224 0.3388 6.84013 0.0294952C6.83417 0.0191307 6.82503 0.0108066 6.81397 0.00566772C6.80291 0.000528787 6.79048 -0.00117262 6.77838 0.000797362C5.44246 0.223493 4.14216 0.613785 2.91073 1.16134C2.90014 1.16514 2.8913 1.17247 2.8858 1.182C0.422946 4.7394 -0.252734 8.20955 0.0785748 11.6361C0.0809497 11.6529 0.0892621 11.6671 0.103512 11.6785C1.53796 12.705 3.14201 13.4891 4.84752 13.9973C4.85957 14.001 4.87251 14.0009 4.88447 13.997C4.89643 13.993 4.90678 13.9855 4.91402 13.9755C5.28056 13.4934 5.60435 12.9849 5.88539 12.4499C5.89123 12.4389 5.89323 12.4264 5.89109 12.4142C5.88895 12.402 5.88278 12.3908 5.87351 12.3822L5.85214 12.3696C5.34076 12.179 4.8453 11.9507 4.37015 11.6866C4.35689 11.6793 4.34703 11.6674 4.34261 11.6533C4.33818 11.6392 4.33954 11.624 4.34641 11.6108L4.36422 11.589C4.46476 11.5163 4.56292 11.4417 4.65871 11.3652C4.66711 11.3586 4.67718 11.3545 4.68784 11.353C4.69851 11.3516 4.70938 11.353 4.71928 11.3571C7.82931 12.73 11.1958 12.73 14.2679 11.3571C14.2781 11.3526 14.2894 11.3509 14.3005 11.3523C14.3117 11.3538 14.3222 11.3582 14.3308 11.3652C14.4266 11.4417 14.5248 11.5163 14.6253 11.589C14.6337 11.5945 14.6404 11.602 14.6449 11.6108C14.6494 11.6196 14.6516 11.6293 14.6511 11.6391C14.6506 11.6489 14.6475 11.6584 14.6422 11.6667C14.6369 11.675 14.6294 11.6818 14.6205 11.6866C14.1474 11.9548 13.6512 12.183 13.1374 12.3684C13.1292 12.3713 13.1218 12.3759 13.1156 12.3818C13.1094 12.3878 13.1047 12.395 13.1018 12.4029C13.0989 12.4105 13.0977 12.4187 13.0983 12.4268C13.0989 12.4349 13.1013 12.4428 13.1053 12.4499C13.3903 12.9837 13.7169 13.4934 14.0755 13.9755C14.0827 13.9855 14.0931 13.993 14.105 13.997C14.117 14.0009 14.1299 14.001 14.142 13.9973C15.8509 13.4919 17.4577 12.7076 18.8931 11.6785C18.9003 11.6737 18.9062 11.6673 18.9105 11.66C18.9148 11.6527 18.9174 11.6445 18.9181 11.6361C19.3147 7.67462 18.2543 4.23316 16.1085 1.18315C16.1066 1.17794 16.1035 1.17325 16.0993 1.16945C16.0952 1.16566 16.0902 1.16287 16.0847 1.16134ZM6.3497 9.54916C5.41277 9.54916 4.64209 8.71807 4.64209 7.69872C4.64209 6.67937 5.39852 5.84713 6.3497 5.84713C7.308 5.84713 8.07155 6.68511 8.0573 7.69872C8.0573 8.71807 7.30087 9.54916 6.3497 9.54916ZM12.6624 9.54916C11.7266 9.54916 10.9548 8.71807 10.9548 7.69872C10.9548 6.67937 11.7112 5.84713 12.6624 5.84713C13.6207 5.84713 14.3854 6.68511 14.37 7.69872C14.37 8.71807 13.6207 9.54916 12.6624 9.54916Z" fill="white"></path>
-                                        </svg>
-                                        <p>Join our Discord</p>
-                                    </a>
-                                    <a target="_blank" class="flex cursor-pointer items-center gap-[16px] py-[8px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="https://github.com/MotiaDev/motia">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M9.00132 0.666016C4.39713 0.666016 0.667969 4.39518 0.667969 8.99935C0.667969 12.6868 3.05339 15.8014 6.36588 16.9056C6.78255 16.9785 6.9388 16.7285 6.9388 16.5098C6.9388 16.3118 6.92838 15.6556 6.92838 14.9577C4.83463 15.3431 4.29297 14.4473 4.1263 13.9785C4.03255 13.7389 3.6263 12.9993 3.27214 12.8014C2.98047 12.6452 2.5638 12.2598 3.26172 12.2493C3.91797 12.2389 4.38672 12.8535 4.54297 13.1035C5.29297 14.3639 6.49088 14.0098 6.97005 13.791C7.04297 13.2493 7.26172 12.8848 7.50132 12.6764C5.64713 12.4681 3.70964 11.7493 3.70964 8.56185C3.70964 7.6556 4.03255 6.9056 4.5638 6.32227C4.48047 6.11393 4.1888 5.25977 4.64714 4.11393C4.64714 4.11393 5.34505 3.89518 6.9388 4.9681C7.60548 4.7806 8.31382 4.68685 9.02215 4.68685C9.73048 4.68685 10.4388 4.7806 11.1055 4.9681C12.6992 3.88477 13.3972 4.11393 13.3972 4.11393C13.8555 5.25977 13.5638 6.11393 13.4805 6.32227C14.0117 6.9056 14.3347 7.64518 14.3347 8.56185C14.3347 11.7598 12.3867 12.4681 10.5326 12.6764C10.8347 12.9368 11.0951 13.4368 11.0951 14.2181C11.0951 15.3327 11.0847 16.2285 11.0847 16.5098C11.0847 16.7285 11.2409 16.9889 11.6576 16.9056C15.0497 15.7604 17.3337 12.5796 17.3347 8.99935C17.3347 4.39518 13.6055 0.666016 9.00132 0.666016Z" fill="white"></path>
-                                        </svg>
-                                        <p>Contribute on Github </p>
-                                        <p class="max-sm:hidden">|</p>
-                                        <div class="flex items-center gap-[6px] text-white max-sm:hidden">
-                                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M5.13678 0.787466C5.27974 0.477517 5.72026 0.477517 5.86322 0.787466L6.95797 3.16088C7.01624 3.2872 7.13595 3.37418 7.2741 3.39056L9.86964 3.6983C10.2086 3.73849 10.3447 4.15744 10.0941 4.38919L8.17517 6.16379C8.07304 6.25824 8.02731 6.39897 8.05443 6.53541L8.56381 9.09902C8.63033 9.43381 8.27395 9.69274 7.9761 9.52602L5.69538 8.24936C5.57399 8.18141 5.42601 8.18141 5.30462 8.24936L3.0239 9.52602C2.72605 9.69274 2.36967 9.43381 2.43619 9.09902L2.94557 6.53541C2.97269 6.39897 2.92696 6.25824 2.82483 6.16379L0.905872 4.38919C0.655272 4.15744 0.791399 3.73849 1.13036 3.6983L3.7259 3.39056C3.86405 3.37418 3.98376 3.2872 4.04203 3.16088L5.13678 0.787466Z" fill="white"></path>
-                                            </svg>
-                                            <p>
-                                                <span class="inline-block animate-pulse">----</span>
-                                            </p>
-                                        </div>
-                                    </a>
-                                    <a target="_blank" class="flex cursor-pointer items-center gap-[16px] py-[8px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="https://x.com/motiadev">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"></path>
-                                        </svg>
-                                        <p>Follow us on Twitter</p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="flex w-[400px] flex-col max-lg:w-full lg:shrink-0">
-                                <div class="flex items-center justify-end gap-[12px] mb-[24px] max-lg:justify-start">
-                                    <a target="_blank" class="text-white/60 transition-colors ease-in-out hover:text-white" aria-label="Follow us on LinkedIn" href="https://www.linkedin.com/company/motiadev">
-                                        <svg width="18" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M4.15234 17.9996H0.306641V5.97656H4.15234V17.9996ZM2.22754 4.32812C1.05859 4.32812 0.111328 3.35742 0.111328 2.16406C0.111328 1.59034 0.339219 1.03989 0.744141 0.634766C1.14912 0.229645 1.69952 0.00170898 2.27324 0.00170898C2.84696 0.00170898 3.39736 0.229645 3.80234 0.634766C4.20727 1.03989 4.43521 1.59034 4.43521 2.16406C4.43521 3.35742 3.48633 4.32812 2.22754 4.32812ZM18.5547 17.9996H14.7168V12.168C14.7168 10.7988 14.6895 9.02344 12.7793 9.02344C10.8418 9.02344 10.5449 10.5117 10.5449 12.0703V17.9996H6.70117V5.97656H10.3809V7.61719H10.4355C10.9707 6.61328 12.2695 5.55469 14.2422 5.55469C18.1348 5.55469 18.8613 8.24219 18.8613 11.7422V17.9996H18.5547Z" fill="white"></path>
-                                        </svg>
-                                    </a>
-                                    <a target="_blank" class="text-white/60 transition-colors ease-in-out hover:text-white" aria-label="Follow us on X (Twitter)" href="https://x.com/motiadev">
-                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="white"></path>
-                                        </svg>
-                                    </a>
-                                    <a target="_blank" class="text-white/60 transition-colors ease-in-out hover:text-white" aria-label="Join our Discord" href="https://discord.gg/motia">
-                                        <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M16.0847 1.16134C14.8528 0.614454 13.5528 0.224352 12.2171 0.000797362C12.205 -0.00117262 12.1925 0.000528787 12.1815 0.00566772C12.1704 0.0108066 12.1613 0.0191307 12.1553 0.0294952C11.9879 0.316474 11.8026 0.691843 11.6732 0.985709C10.2335 0.774678 8.76909 0.774678 7.32937 0.985709C7.1856 0.658076 7.02224 0.3388 6.84013 0.0294952C6.83417 0.0191307 6.82503 0.0108066 6.81397 0.00566772C6.80291 0.000528787 6.79048 -0.00117262 6.77838 0.000797362C5.44246 0.223493 4.14216 0.613785 2.91073 1.16134C2.90014 1.16514 2.8913 1.17247 2.8858 1.182C0.422946 4.7394 -0.252734 8.20955 0.0785748 11.6361C0.0809497 11.6529 0.0892621 11.6671 0.103512 11.6785C1.53796 12.705 3.14201 13.4891 4.84752 13.9973C4.85957 14.001 4.87251 14.0009 4.88447 13.997C4.89643 13.993 4.90678 13.9855 4.91402 13.9755C5.28056 13.4934 5.60435 12.9849 5.88539 12.4499C5.89123 12.4389 5.89323 12.4264 5.89109 12.4142C5.88895 12.402 5.88278 12.3908 5.87351 12.3822L5.85214 12.3696C5.34076 12.179 4.8453 11.9507 4.37015 11.6866C4.35689 11.6793 4.34703 11.6674 4.34261 11.6533C4.33818 11.6392 4.33954 11.624 4.34641 11.6108L4.36422 11.589C4.46476 11.5163 4.56292 11.4417 4.65871 11.3652C4.66711 11.3586 4.67718 11.3545 4.68784 11.353C4.69851 11.3516 4.70938 11.353 4.71928 11.3571C7.82931 12.73 11.1958 12.73 14.2679 11.3571C14.2781 11.3526 14.2894 11.3509 14.3005 11.3523C14.3117 11.3538 14.3222 11.3582 14.3308 11.3652C14.4266 11.4417 14.5248 11.5163 14.6253 11.589C14.6337 11.5945 14.6404 11.602 14.6449 11.6108C14.6494 11.6196 14.6516 11.6293 14.6511 11.6391C14.6506 11.6489 14.6475 11.6584 14.6422 11.6667C14.6369 11.675 14.6294 11.6818 14.6205 11.6866C14.1474 11.9548 13.6512 12.183 13.1374 12.3684C13.1292 12.3713 13.1218 12.3759 13.1156 12.3818C13.1094 12.3878 13.1047 12.395 13.1018 12.4029C13.0989 12.4105 13.0977 12.4187 13.0983 12.4268C13.0989 12.4349 13.1013 12.4428 13.1053 12.4499C13.3903 12.9837 13.7169 13.4934 14.0755 13.9755C14.0827 13.9855 14.0931 13.993 14.105 13.997C14.117 14.0009 14.1299 14.001 14.142 13.9973C15.8509 13.4919 17.4577 12.7076 18.8931 11.6785C18.9003 11.6737 18.9062 11.6673 18.9105 11.66C18.9148 11.6527 18.9174 11.6445 18.9181 11.6361C19.3147 7.67462 18.2543 4.23316 16.1085 1.18315C16.1066 1.17794 16.1035 1.17325 16.0993 1.16945C16.0952 1.16566 16.0902 1.16287 16.0847 1.16134ZM6.3497 9.54916C5.41277 9.54916 4.64209 8.71807 4.64209 7.69872C4.64209 6.67937 5.39852 5.84713 6.3497 5.84713C7.308 5.84713 8.07155 6.68511 8.0573 7.69872C8.0573 8.71807 7.30087 9.54916 6.3497 9.54916ZM12.6624 9.54916C11.7266 9.54916 10.9548 8.71807 10.9548 7.69872C10.9548 6.67937 11.7112 5.84713 12.6624 5.84713C13.6207 5.84713 14.3854 6.68511 14.37 7.69872C14.37 8.71807 13.6207 9.54916 12.6624 9.54916Z" fill="white"></path>
-                                        </svg>
-                                    </a>
-                                    <a target="_blank" class="text-white/60 transition-colors ease-in-out hover:text-white" aria-label="Subscribe to our YouTube channel" href="https://www.youtube.com/@motiadev">
-                                        <svg width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M19.582 2.186c-.217-.815-.856-1.453-1.671-1.671C16.376 0 10.047 0 10.047 0S3.717 0 2.183.515c-.815.218-1.454.856-1.671 1.671C0 3.72 0 7 0 7s0 3.28.512 4.814c.217.815.856 1.453 1.671 1.671 1.534.515 7.864.515 7.864.515s6.329 0 7.864-.515c.815-.218 1.454-.856 1.671-1.671C20 10.28 20 7 20 7s0-3.28-.418-4.814z" fill="white"></path>
-                                            <path d="M8.023 10.053L13.2 7l-5.177-3.053v6.106z" fill="#000"></path>
-                                        </svg>
-                                    </a>
-                                </div>
-                                <div class="flex w-[400px] gap-[32px] max-lg:w-full max-lg:flex-col lg:shrink-0 lg:justify-between">
-                                    <div class="flex w-fit flex-col items-end gap-[24px] max-lg:w-fit max-lg:items-start">
-                                        <p class="cursor-pointer text-[16px] text-white/60 transition-colors ease-in-out hover:text-white">Use Cases</p>
-                                        <p class="cursor-pointer text-[16px] text-white/60 transition-colors ease-in-out hover:text-white">Integrations</p>
-                                        <a class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="/telemetry">Telemetry</a>
-                                        <a class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="/toc">Terms and conditions</a>
-                                    </div>
-                                    <div class="flex w-fit flex-col items-end gap-[24px] max-lg:w-fit max-lg:items-start">
-                                        <a class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="/manifesto">Manifesto</a>
-                                        <a class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="/docs">Documentation</a>
-                                        <button aria-label="Click To Register For Motia Cloud" class="flex cursor-pointer gap-[4px] font-sans text-[16px] text-white/60 transition-colors ease-in-out hover:text-white">
-                                            <div class="rounded-[4px] bg-[#20ABFC]/12 px-[6px] text-[#088CFF]">Join Beta</div>
-                                            <p>Motia Cloud</p>
-                                        </button>
-                                        <a class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white" href="/privacy-policy">Privacy Policy</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="relative w-full">
-                            <div class="" style="opacity:0;transform:translateY(20px)">
-                                <img alt="wordmark" loading="lazy" width="1200" height="263" decoding="async" data-nimg="1" class="object-contain object-bottom" style="color:transparent" src="/_next/static/media/footerWordmark.c1f08560.svg"/>
-                            </div>
-                        </div>
-                    </div>
-                    <img alt="glow" loading="lazy" width="1367" height="824" decoding="async" data-nimg="1" class="pointer-none: absolute right-0 bottom-0 h-full w-[40%] min-w-[290px] object-contain object-right-bottom" style="color:transparent" src="/_next/static/media/footerWordmarkGlow.cd474c60.svg"/>
-                </div>
-            </div>
+          </div>
+          <div class="flex items-center gap-[14px] max-md:gap-[4px]">
+            <a
+              target="_blank"
+              class="vercel-oss-button inline-flex items-center gap-2 max-md:hidden mr-3 leading-none"
+              href="https://vercel.com/blog/summer-2025-oss-program#motia"
+            >
+              <svg
+                aria-label="Vercel logomark"
+                height="12"
+                role="img"
+                viewBox="0 0 74 64"
+                class="fill-current block m-0 p-0"
+              >
+                <path
+                  d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z"
+                  fill="white"
+                ></path>
+              </svg>
+              <span class="max-lg:hidden">Vercel OSS 2025</span>
+            </a>
+            <a
+              aria-label="Visit Discord"
+              target="_blank"
+              class="flex cursor-pointer items-center gap-[16px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white max-md:hidden"
+              href="https://discord.gg/motia"
+            >
+              <svg
+                width="19"
+                height="14"
+                viewBox="0 0 19 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16.0847 1.16134C14.8528 0.614454 13.5528 0.224352 12.2171 0.000797362C12.205 -0.00117262 12.1925 0.000528787 12.1815 0.00566772C12.1704 0.0108066 12.1613 0.0191307 12.1553 0.0294952C11.9879 0.316474 11.8026 0.691843 11.6732 0.985709C10.2335 0.774678 8.76909 0.774678 7.32937 0.985709C7.1856 0.658076 7.02224 0.3388 6.84013 0.0294952C6.83417 0.0191307 6.82503 0.0108066 6.81397 0.00566772C6.80291 0.000528787 6.79048 -0.00117262 6.77838 0.000797362C5.44246 0.223493 4.14216 0.613785 2.91073 1.16134C2.90014 1.16514 2.8913 1.17247 2.8858 1.182C0.422946 4.7394 -0.252734 8.20955 0.0785748 11.6361C0.0809497 11.6529 0.0892621 11.6671 0.103512 11.6785C1.53796 12.705 3.14201 13.4891 4.84752 13.9973C4.85957 14.001 4.87251 14.0009 4.88447 13.997C4.89643 13.993 4.90678 13.9855 4.91402 13.9755C5.28056 13.4934 5.60435 12.9849 5.88539 12.4499C5.89123 12.4389 5.89323 12.4264 5.89109 12.4142C5.88895 12.402 5.88278 12.3908 5.87351 12.3822L5.85214 12.3696C5.34076 12.179 4.8453 11.9507 4.37015 11.6866C4.35689 11.6793 4.34703 11.6674 4.34261 11.6533C4.33818 11.6392 4.33954 11.624 4.34641 11.6108L4.36422 11.589C4.46476 11.5163 4.56292 11.4417 4.65871 11.3652C4.66711 11.3586 4.67718 11.3545 4.68784 11.353C4.69851 11.3516 4.70938 11.353 4.71928 11.3571C7.82931 12.73 11.1958 12.73 14.2679 11.3571C14.2781 11.3526 14.2894 11.3509 14.3005 11.3523C14.3117 11.3538 14.3222 11.3582 14.3308 11.3652C14.4266 11.4417 14.5248 11.5163 14.6253 11.589C14.6337 11.5945 14.6404 11.602 14.6449 11.6108C14.6494 11.6196 14.6516 11.6293 14.6511 11.6391C14.6506 11.6489 14.6475 11.6584 14.6422 11.6667C14.6369 11.675 14.6294 11.6818 14.6205 11.6866C14.1474 11.9548 13.6512 12.183 13.1374 12.3684C13.1292 12.3713 13.1218 12.3759 13.1156 12.3818C13.1094 12.3878 13.1047 12.395 13.1018 12.4029C13.0989 12.4105 13.0977 12.4187 13.0983 12.4268C13.0989 12.4349 13.1013 12.4428 13.1053 12.4499C13.3903 12.9837 13.7169 13.4934 14.0755 13.9755C14.0827 13.9855 14.0931 13.993 14.105 13.997C14.117 14.0009 14.1299 14.001 14.142 13.9973C15.8509 13.4919 17.4577 12.7076 18.8931 11.6785C18.9003 11.6737 18.9062 11.6673 18.9105 11.66C18.9148 11.6527 18.9174 11.6445 18.9181 11.6361C19.3147 7.67462 18.2543 4.23316 16.1085 1.18315C16.1066 1.17794 16.1035 1.17325 16.0993 1.16945C16.0952 1.16566 16.0902 1.16287 16.0847 1.16134ZM6.3497 9.54916C5.41277 9.54916 4.64209 8.71807 4.64209 7.69872C4.64209 6.67937 5.39852 5.84713 6.3497 5.84713C7.308 5.84713 8.07155 6.68511 8.0573 7.69872C8.0573 8.71807 7.30087 9.54916 6.3497 9.54916ZM12.6624 9.54916C11.7266 9.54916 10.9548 8.71807 10.9548 7.69872C10.9548 6.67937 11.7112 5.84713 12.6624 5.84713C13.6207 5.84713 14.3854 6.68511 14.37 7.69872C14.37 8.71807 13.6207 9.54916 12.6624 9.54916Z"
+                  fill="white"
+                ></path>
+              </svg>
+            </a>
+            <a
+              target="_blank"
+              class="font-tasa flex cursor-pointer items-center gap-[16px] rounded-[4px] border-[1px] border-white/20 bg-black/40 px-[8px] py-[4px] text-[16px] font-medium tracking-wider text-white transition-colors ease-in-out hover:text-white max-sm:gap-[8px] max-sm:py-[8px] max-sm:text-[14px]"
+              href="https://github.com/MotiaDev/motia"
+            >
+              <svg
+                width="18"
+                height="17"
+                viewBox="0 0 18 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.00132 0.666016C4.39713 0.666016 0.667969 4.39518 0.667969 8.99935C0.667969 12.6868 3.05339 15.8014 6.36588 16.9056C6.78255 16.9785 6.9388 16.7285 6.9388 16.5098C6.9388 16.3118 6.92838 15.6556 6.92838 14.9577C4.83463 15.3431 4.29297 14.4473 4.1263 13.9785C4.03255 13.7389 3.6263 12.9993 3.27214 12.8014C2.98047 12.6452 2.5638 12.2598 3.26172 12.2493C3.91797 12.2389 4.38672 12.8535 4.54297 13.1035C5.29297 14.3639 6.49088 14.0098 6.97005 13.791C7.04297 13.2493 7.26172 12.8848 7.50132 12.6764C5.64713 12.4681 3.70964 11.7493 3.70964 8.56185C3.70964 7.6556 4.03255 6.9056 4.5638 6.32227C4.48047 6.11393 4.1888 5.25977 4.64714 4.11393C4.64714 4.11393 5.34505 3.89518 6.9388 4.9681C7.60548 4.7806 8.31382 4.68685 9.02215 4.68685C9.73048 4.68685 10.4388 4.7806 11.1055 4.9681C12.6992 3.88477 13.3972 4.11393 13.3972 4.11393C13.8555 5.25977 13.5638 6.11393 13.4805 6.32227C14.0117 6.9056 14.3347 7.64518 14.3347 8.56185C14.3347 11.7598 12.3867 12.4681 10.5326 12.6764C10.8347 12.9368 11.0951 13.4368 11.0951 14.2181C11.0951 15.3327 11.0847 16.2285 11.0847 16.5098C11.0847 16.7285 11.2409 16.9889 11.6576 16.9056C15.0497 15.7604 17.3337 12.5796 17.3347 8.99935C17.3347 4.39518 13.6055 0.666016 9.00132 0.666016Z"
+                  fill="white"
+                ></path>
+              </svg>
+              <p class="sm:-ml-[8px] max-lg:hidden">Github</p>
+              <p class="text-white/40 max-lg:hidden">|</p>
+              <div class="flex items-center gap-[6px] text-white">
+                <svg
+                  width="11"
+                  height="10"
+                  viewBox="0 0 11 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5.13678 0.787466C5.27974 0.477517 5.72026 0.477517 5.86322 0.787466L6.95797 3.16088C7.01624 3.2872 7.13595 3.37418 7.2741 3.39056L9.86964 3.6983C10.2086 3.73849 10.3447 4.15744 10.0941 4.38919L8.17517 6.16379C8.07304 6.25824 8.02731 6.39897 8.05443 6.53541L8.56381 9.09902C8.63033 9.43381 8.27395 9.69274 7.9761 9.52602L5.69538 8.24936C5.57399 8.18141 5.42601 8.18141 5.30462 8.24936L3.0239 9.52602C2.72605 9.69274 2.36967 9.43381 2.43619 9.09902L2.94557 6.53541C2.97269 6.39897 2.92696 6.25824 2.82483 6.16379L0.905872 4.38919C0.655272 4.15744 0.791399 3.73849 1.13036 3.6983L3.7259 3.39056C3.86405 3.37418 3.98376 3.2872 4.04203 3.16088L5.13678 0.787466Z"
+                    fill="white"
+                  ></path>
+                </svg>
+                <p>
+                  <span class="inline-block animate-pulse">----</span>
+                </p>
+              </div>
+            </a>
+            <button
+              class="h-[40px] w-[40px] rounded-[4px] bg-white/10 p-[10px] md:hidden"
+            >
+              <div
+                class="flex h-full w-full flex-col items-end justify-center space-y-[5px]"
+              >
+                <div class="h-[1.5px] w-[80%] bg-white"></div>
+                <div class="h-[1.5px] w-full bg-white"></div>
+                <div class="h-[1.5px] w-[50%] bg-white"></div>
+              </div>
+            </button>
+          </div>
+        </nav>
+      </div>
+      <img
+        alt="Background Glow"
+        aria-hidden="true"
+        loading="lazy"
+        width="1117"
+        height="396"
+        decoding="async"
+        data-nimg="1"
+        class="absolute top-0 right-0 max-w-full"
+        style="color: transparent"
+        src="/_next/static/media/bgManifestoPage.f5394aca.svg"
+      />
+      <div
+        class="relative mx-auto w-full max-w-[1200px] pt-[160px] pb-[200px] max-md:px-[16px]"
+      >
+        <div class="mx-auto w-[660px] max-w-full">
+          <h1
+            class="font-tasa text-[32px] leading-[1.25em] font-semibold tracking-[1.44px] text-white md:text-[40px] text-center"
+          >
+            <span
+              class="inline-block"
+              style="opacity: 0; filter: blur(6px); transform: translateY(6px)"
+              >Privacy
+              <!-- -->
+            </span>
+            <span
+              class="inline-block"
+              style="opacity: 0; filter: blur(6px); transform: translateY(6px)"
+              >Policy
+              <!-- -->
+            </span>
+          </h1>
+          <p
+            class="text-center text-[20px] text-white/80 leading-[140%] font-sans mt-[24px]"
+          >
+            Your privacy is fundamental to how we build Obiya. This policy
+            explains how we
+            <span
+              class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent"
+              >collect, use, and protect</span
+            >
+            your information.
+          </p>
         </div>
-        <!--$?-->
-        <template id="B:0"></template>
-        <!--/$-->
-        <!--$?-->
-        <template id="B:1"></template>
-        <!--/$-->
-        <script src="/_next/static/chunks/webpack-2fe152f0771b4ef5.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF" async=""></script>
-        <div hidden id="S:0"></div>
-        <script>
-            $RC = function(b, c, e) {
-                c = document.getElementById(c);
-                c.parentNode.removeChild(c);
-                var a = document.getElementById(b);
-                if (a) {
-                    b = a.previousSibling;
-                    if (e)
-                        b.data = "$!",
-                        a.setAttribute("data-dgst", e);
-                    else {
-                        e = b.parentNode;
-                        a = b.nextSibling;
-                        var f = 0;
-                        do {
-                            if (a && 8 === a.nodeType) {
-                                var d = a.data;
-                                if ("/$" === d)
-                                    if (0 === f)
-                                        break;
-                                    else
-                                        f--;
-                                else
-                                    "$" !== d && "$?" !== d && "$!" !== d || f++
-                            }
-                            d = a.nextSibling;
-                            e.removeChild(a);
-                            a = d
-                        } while (a);
-                        for (; c.firstChild; )
-                            e.insertBefore(c.firstChild, a);
-                        b.data = "$"
-                    }
-                    b._reactRetry && b._reactRetry()
-                }
-            }
-            ;
-            $RC("B:0", "S:0")
-        </script>
-        <div hidden id="S:1"></div>
-        <script>
-            $RC("B:1", "S:1")
-        </script>
-        <script>
-            (self.__next_f = self.__next_f || []).push([0])
-        </script>
-        <script>
-            self.__next_f.push([1, "1:\"$Sreact.fragment\"\n2:I[98372,[\"8967\",\"static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"5971\",\"static/chunks/5971-2e507bf134c94592.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7177\",\"static/chunks/app/layout-c084c5183d558559.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"GoogleTagManager\"]\n3:I[13899,[\"8967\",\"static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"5971\",\"static/chunks/5971-2e507bf134c94592.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7177\",\"static/chunks/app/layout-c084c5183d558559.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"\"]\n4:I[3886,[\"8967\",\"static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"5971\",\"static/chunks/5971-2e507bf134c94592.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7177\",\"static/chunks/app/layout-c084c5183d558559.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"RootProvider\"]\n5:I[15155,[],\"\"]\n6:I[55247,[],\"\"]\n7:I[41154,[\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"4345\",\"static/chunks/app/not-found-da71133f03727d5e.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"default\"]\n8:I[87550,[\"8967\",\"static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"5971\",\"static/chunks/5971-2e507bf134c94592.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7177\",\"static/chunks/app/layout-c084c5183d558559.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"Analytics\"]\n9:I[62390,[\"8967\",\"static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"6224\",\"static/chunks/6224-6abc9425977663c8.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"8193\",\"static/chunks/8193-31d84b7d795cf6"])
-        </script>
-        <script>
-            self.__next_f.push([1, "a0.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"2902\",\"static/chunks/app/privacy-policy/page-991deaa7059cad8d.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"default\"]\na:I[58967,[\"8967\",\"static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"6224\",\"static/chunks/6224-6abc9425977663c8.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"8193\",\"static/chunks/8193-31d84b7d795cf6a0.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"2902\",\"static/chunks/app/privacy-policy/page-991deaa7059cad8d.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"Image\"]\nb:I[61887,[\"8967\",\"static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"6224\",\"static/chunks/6224-6abc9425977663c8.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"8193\",\"static/chunks/8193-31d84b7d795cf6a0.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"2902\",\"static/chunks/app/privacy-policy/page-991deaa7059cad8d.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"default\"]\nc:I[40712,[\"8967\",\"static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"7178\",\"static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"6224\",\"static/chunks/6224-6abc9425977663c8.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"8193\",\"static/chunks/8193-31d84b7d795cf6a0.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"2902\",\"static/chunks/app/privacy-policy/page-991deaa7059cad8d.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\"],\"default\"]\nd:I[86785,[],\"MetadataBoundary\"]\nf:I[86785,[],\"OutletBoundary\"]\n12:I[26191,[],\"AsyncMetadataOutlet\"]\n14:I[86785,[],\"ViewportBoundary\"]\n16:I[17030,[],\"\"]\n17:\"$Sreact.suspense\"\n18:I[26191,[],\"AsyncMetadata\"]\n:HL[\"/_next/static/media/0e96d314a90a6138-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/569ce4b8f30dc480-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type"])
-        </script>
-        <script>
-            self.__next_f.push([1, "\":\"font/woff2\"}]\n:HL[\"/_next/static/media/f2f91ba921b45b28-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n:HL[\"/_next/static/css/e3bd31e4703eb3c6.css?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"style\"]\n:HL[\"/_next/static/css/e02ae1a7620caecc.css?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"style\"]\n"])
-        </script>
-        <script>
-            self.__next_f.push([1, "0:{\"P\":null,\"b\":\"KAVxqVsZA2RbOwnU9qDv4\",\"p\":\"\",\"c\":[\"\",\"privacy-policy\"],\"i\":false,\"f\":[[[\"\",{\"children\":[\"privacy-policy\",{\"children\":[\"__PAGE__\",{}]}]},\"$undefined\",\"$undefined\",true],[\"\",[\"$\",\"$1\",\"c\",{\"children\":[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/e3bd31e4703eb3c6.css?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}],[\"$\",\"link\",\"1\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/e02ae1a7620caecc.css?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF\",\"precedence\":\"next\",\"crossOrigin\":\"$undefined\",\"nonce\":\"$undefined\"}]],[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"$L2\",null,{\"gtmId\":\"GTM-P6672CSW\"}],[\"$\",\"script\",null,{\"type\":\"text/javascript\",\"dangerouslySetInnerHTML\":{\"__html\":\"\\n              !function(){var e,t,n;e=\\\"d8f0ce9cae8ae64\\\",t=function(){Reo.init({clientID:\\\"d8f0ce9cae8ae64\\\", source: \\\"internal\\\"})},(n=document.createElement(\\\"script\\\")).src=\\\"https://static.reo.dev/\\\"+e+\\\"/reo.js\\\",n.defer=!0,n.onload=t,document.head.appendChild(n)}();\\n            \"}}],[\"$\",\"meta\",null,{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1, viewport-fit=cover\"}],[\"$\",\"meta\",null,{\"name\":\"mobile-web-app-capable\",\"content\":\"yes\"}],[\"$\",\"meta\",null,{\"name\":\"apple-mobile-web-app-capable\",\"content\":\"yes\"}],[\"$\",\"meta\",null,{\"name\":\"apple-touch-fullscreen\",\"content\":\"yes\"}],[\"$\",\"$L3\",null,{\"id\":\"website-jsonld\",\"type\":\"application/ld+json\",\"strategy\":\"afterInteractive\",\"dangerouslySetInnerHTML\":{\"__html\":\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"WebSite\\\",\\\"name\\\":\\\"Motia - Unified Backend Framework for APIs, Events and AI Agents\\\",\\\"description\\\":\\\"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud.\\\",\\\"url\\\":\\\"https://motia.dev\\\",\\\"image\\\":[\\\"https://motia.dev/og-image-updated-new.jpg\\\"]}\"}}]]}],[\"$\",\"body\",null,{\"suppressHydrationWarning\":true,\"className\":\"__variable_356fc9 __variable_9ef920 __variable_ed711f w-screen overflow-x-hidden antialiased\",\"children\":[[\"$\",\"$L3\",null,{\"async\":true,\"defer\":true,\"data-api\":\"$undefined\",\"data-domain\":\"motia.dev\",\"data-exclude\":\"$undefined\",\"src\":\"https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js\",\"integrity\":\"$undefined\",\"crossOrigin\":\"$undefined\"}],[\"$\",\"$L3\",null,{\"id\":\"next-plausible-init\",\"dangerouslySetInnerHTML\":{\"__html\":\"window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }\"},\"nonce\":\"$undefined\"}],[\"$\",\"$L4\",null,{\"children\":[[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"$L7\",null,{}],[]],\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}],[\"$\",\"$L8\",null,{}]]}]]}]]}]]}],{\"children\":[\"privacy-policy\",[\"$\",\"$1\",\"c\",{\"children\":[null,[\"$\",\"$L5\",null,{\"parallelRouterKey\":\"children\",\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L6\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"forbidden\":\"$undefined\",\"unauthorized\":\"$undefined\"}]]}],{\"children\":[\"__PAGE__\",[\"$\",\"$1\",\"c\",{\"children\":[[\"$\",\"div\",null,{\"className\":\"relative flex w-full flex-col items-center bg-black\",\"children\":[[\"$\",\"$L9\",null,{}],[\"$\",\"$La\",null,{\"src\":{\"src\":\"/_next/static/media/bgManifestoPage.f5394aca.svg\",\"height\":396,\"width\":1117,\"blurWidth\":0,\"blurHeight\":0},\"alt\":\"Background Glow\",\"aria-hidden\":true,\"className\":\"absolute top-0 right-0 max-w-full\"}],[\"$\",\"div\",null,{\"className\":\"relative mx-auto w-full max-w-[1200px] pt-[160px] pb-[200px] max-md:px-[16px]\",\"children\":[[\"$\",\"div\",null,{\"className\":\"mx-auto w-[660px] max-w-full\",\"children\":[[\"$\",\"$Lb\",null,{\"className\":\"text-center\",\"children\":\"Privacy Policy\"}],[\"$\",\"p\",null,{\"className\":\"text-center text-[20px] text-white/80 leading-[140%] font-sans mt-[24px]\",\"children\":[\"Your privacy is fundamental to how we build Motia. This policy explains how we \",[\"$\",\"span\",null,{\"className\":\"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent\",\"children\":\"collect, use, and protect\"}],\" your information.\"]}]]}],[\"$\",\"div\",null,{\"className\":\"my-[72px] h-[1px] w-full bg-white/20\"}],[\"$\",\"div\",null,{\"className\":\"mx-auto flex w-full max-w-[760px] flex-col gap-[40px]\",\"children\":[[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Information We Collect\"}],[\"$\",\"p\",null,{\"children\":[\"We collect information to provide better services to all our users. The information we collect falls into \",[\"$\",\"span\",null,{\"className\":\"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent\",\"children\":\"three main categories\"}],\": account information, usage analytics, and support communications.\"]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Account Information\"}],[\"$\",\"p\",null,{\"children\":\"When you create a Motia account, we collect:\"}],[\"$\",\"ul\",null,{\"className\":\"list-disc space-y-[12px] ml-[20px] mt-[16px]\",\"children\":[[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Basic Profile Data:\"}],\" Email address, name, and account details and preferences\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Billing Information:\"}],\" Payment details for paid plans (processed securely by third-party providers)\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Project Metadata:\"}],\" Project names, configurations, and deployment settings\"]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Usage Analytics\"}],[\"$\",\"p\",null,{\"children\":[\"To improve Motia, we collect \",[\"$\",\"span\",null,{\"className\":\"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent\",\"children\":\"completely anonymized usage analytics\"}],\". This includes command usage patterns, performance metrics, and error frequencies. All analytics data is aggregated and cannot be traced back to individual users.\"]}],[\"$\",\"p\",null,{\"className\":\"mt-[16px]\",\"children\":[\"You can disable analytics collection at any time. More details on this in our \",[\"$\",\"a\",null,{\"href\":\"/telemetry\",\"className\":\"text-[#5AC5FF] hover:text-white underline\",\"children\":\"Telemetry page\"}],\".\"]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans relative overflow-hidden border-l-[3px] border-[#5AC5FF] bg-[#17181F] p-[32px]\",\"children\":[[\"$\",\"$La\",null,{\"src\":{\"src\":\"/_next/static/media/bgManifestoDeclaration.7c2bd6ee.svg\",\"height\":612,\"width\":794,\"blurWidth\":0,\"blurHeight\":0},\"alt\":\"Privacy Glow\",\"aria-hidden\":true,\"className\":\"pointer-events-none absolute top-0 left-0 z-0\"}],[\"$\",\"div\",null,{\"className\":\"relative flex flex-col gap-[20px]\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Data Protection Principles\"}],[\"$\",\"p\",null,{\"children\":[\"We follow strict data protection principles designed to \",[\"$\",\"span\",null,{\"className\":\"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent\",\"children\":\"respect your privacy and maintain your trust\"}],\". These aren't just policies - they're commitments.\"]}],[\"$\",\"ul\",null,{\"className\":\"list-inside list-disc space-y-[16px]\",\"children\":[[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"font-medium text-white\",\"children\":\"Minimal Data Collection:\"}],\" We only collect data that's necessary to provide and improve our services.\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"font-medium text-white\",\"children\":\"Purpose Limitation:\"}],\" Data is used only for the purposes we've disclosed to you.\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"font-medium text-white\",\"children\":\"Data Minimization:\"}],\" We retain data only as long as necessary and delete it when it is no longer needed.\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"font-medium text-white\",\"children\":\"Security by Design:\"}],\" All systems are built with privacy and security as foundational requirements.\"]}]]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"How We Use Your Information\"}],[\"$\",\"p\",null,{\"children\":\"We use the information we collect to:\"}],[\"$\",\"ul\",null,{\"className\":\"list-disc space-y-[12px] ml-[20px] mt-[16px]\",\"children\":[[\"$\",\"li\",null,{\"children\":\"Provide, maintain, and improve Motia services\"}],[\"$\",\"li\",null,{\"children\":\"Process transactions and send related information\"}],[\"$\",\"li\",null,{\"children\":\"Send technical notices, updates, and support messages\"}],[\"$\",\"li\",null,{\"children\":\"Respond to your comments, questions, and customer service requests\"}],[\"$\",\"li\",null,{\"children\":\"Develop new features and functionality\"}],[\"$\",\"li\",null,{\"children\":\"Monitor and analyze trends, usage, and activities\"}]]}],[\"$\",\"p\",null,{\"className\":\"mt-[16px]\",\"children\":[[\"$\",\"span\",null,{\"className\":\"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent\",\"children\":\"We never sell your personal data\"}],\" to third parties or use it for advertising purposes.\"]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Data Sharing and Disclosure\"}],[\"$\",\"p\",null,{\"children\":\"We may share your information in the following limited circumstances:\"}],[\"$\",\"ul\",null,{\"className\":\"list-disc space-y-[12px] ml-[20px] mt-[16px]\",\"children\":[[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Service Providers:\"}],\" With trusted third-party services that help us operate (hosting, payment processing, support)\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Legal Requirements:\"}],\" When required by law or to protect our rights and users' safety\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Business Transfers:\"}],\" In connection with mergers, acquisitions, or asset sales (with user notification)\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"With Your Consent:\"}],\" When you explicitly authorize us to share specific information\"]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Data Security\"}],[\"$\",\"p\",null,{\"children\":\"We implement comprehensive security measures to protect your information, including access controls, regular security audits, and employee training on data protection.\"}],[\"$\",\"p\",null,{\"className\":\"mt-[16px]\",\"children\":\"While we strive to protect your personal information, no method of transmission over the internet is 100% secure. We continuously improve our security practices and will notify you of any significant data breaches as required by law.\"}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Your Rights and Choices\"}],[\"$\",\"p\",null,{\"children\":\"You have several rights regarding your personal information:\"}],[\"$\",\"ul\",null,{\"className\":\"list-disc space-y-[12px] ml-[20px] mt-[16px]\",\"children\":[[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Access:\"}],\" Request a copy of the personal information we hold about you\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Correction:\"}],\" Update or correct inaccurate personal information\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Deletion:\"}],\" Request deletion of your personal information (subject to legal obligations)\"]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Opt-out:\"}],\" Disable analytics collection and marketing communications\"]}]]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"International Data Transfers\"}],[\"$\",\"p\",null,{\"children\":[\"Motia operates globally, and your information may be transferred to and processed in countries other than your own. \",[\"$\",\"span\",null,{\"className\":\"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent\",\"children\":\"We ensure appropriate safeguards\"}],\" are in place for international transfers, including standard contractual clauses and adequacy decisions.\"]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Children's Privacy\"}],[\"$\",\"p\",null,{\"children\":\"Motia is not intended for use by children under 13 years of age. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us immediately.\"}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans\",\"children\":[[\"$\",\"h2\",null,{\"className\":\"text-[24px] font-semibold text-white font-tasa mb-[20px]\",\"children\":\"Changes to This Policy\"}],[\"$\",\"p\",null,{\"children\":[\"We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the \\\"Last Updated\\\" date. \",[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"Significant changes will be communicated\"}],\" via email or prominent notice in the application.\"]}]]}],[\"$\",\"section\",null,{\"className\":\"text-[18px] text-white/60 leading-[150%] font-sans mt-[-10px]\",\"children\":[[\"$\",\"p\",null,{\"children\":[\"Privacy isn't just a policy for us, it's a core value. We believe developers should have \",[\"$\",\"span\",null,{\"className\":\"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent\",\"children\":\"complete control over their data\"}],\" and clear understanding of how it's used to improve the tools they rely on.\"]}],[\"$\",\"p\",null,{\"className\":\"mt-[20px]\",\"children\":[\"Questions about this privacy policy or your data? Contact at \",[\"$\",\"span\",null,{\"className\":\"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium\",\"children\":\"mike@motia.dev\"}]]}],[\"$\",\"p\",null,{\"className\":\"mt-[16px] text-[16px] text-white/40\",\"children\":\"Last updated: July 2025\"}]]}]]}]]}],[\"$\",\"$Lc\",null,{}]]}],[\"$\",\"$Ld\",null,{\"children\":\"$Le\"}],null,[\"$\",\"$Lf\",null,{\"children\":[\"$L10\",\"$L11\",[\"$\",\"$L12\",null,{\"promise\":\"$@13\"}]]}]]}],{},null,false]},null,false]},null,false],[\"$\",\"$1\",\"h\",{\"children\":[null,[\"$\",\"$1\",\"MbCoXUTHF10yixOMejirA\",{\"children\":[[\"$\",\"$L14\",null,{\"children\":\"$L15\"}],[\"$\",\"meta\",null,{\"name\":\"next-size-adjust\",\"content\":\"\"}]]}],null]}],false]],\"m\":\"$undefined\",\"G\":[\"$16\",\"$undefined\"],\"s\":false,\"S\":false}\n"])
-        </script>
-        <script>
-            self.__next_f.push([1, "e:[\"$\",\"$17\",null,{\"fallback\":null,\"children\":[\"$\",\"$L18\",null,{\"promise\":\"$@19\"}]}]\n11:null\n15:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",\"1\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}]]\n10:null\n"])
-        </script>
-        <script>
-            self.__next_f.push([1, "19:{\"metadata\":[[\"$\",\"title\",\"0\",{\"children\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"1\",{\"name\":\"description\",\"content\":\"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud.\"}],[\"$\",\"meta\",\"2\",{\"name\":\"keywords\",\"content\":\"AI,automation,event-driven workflows,software engineering,backend automation,developer tools\"}],[\"$\",\"meta\",\"3\",{\"name\":\"robots\",\"content\":\"index, follow\"}],[\"$\",\"meta\",\"4\",{\"name\":\"googlebot\",\"content\":\"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1\"}],[\"$\",\"meta\",\"5\",{\"name\":\"instagram:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"6\",{\"name\":\"instagram:title\",\"content\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"7\",{\"name\":\"instagram:description\",\"content\":\"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud.\"}],[\"$\",\"meta\",\"8\",{\"name\":\"instagram:image\",\"content\":\"https://dev-motia.vercel.app/og-image-updated-new.jpg\"}],[\"$\",\"meta\",\"9\",{\"name\":\"reddit:title\",\"content\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"10\",{\"name\":\"reddit:description\",\"content\":\"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud.\"}],[\"$\",\"meta\",\"11\",{\"name\":\"reddit:image\",\"content\":\"https://dev-motia.vercel.app/og-image-updated-new.jpg\"}],[\"$\",\"meta\",\"12\",{\"name\":\"linkedin:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"13\",{\"name\":\"linkedin:title\",\"content\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"14\",{\"name\":\"linkedin:description\",\"content\":\"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud.\"}],[\"$\",\"meta\",\"15\",{\"name\":\"linkedin:image\",\"content\":\"https://dev-motia.vercel.app/og-image-updated-new.jpg\"}],[\"$\",\"meta\",\"16\",{\"name\":\"twitter:url\",\"content\":\"https://dev-motia.vercel.app\"}],[\"$\",\"meta\",\"17\",{\"name\":\"twitter:domain\",\"content\":\"motia.dev\"}],[\"$\",\"meta\",\"18\",{\"name\":\"twitter:image:alt\",\"content\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"19\",{\"name\":\"format-detection\",\"content\":\"telephone=no\"}],[\"$\",\"meta\",\"20\",{\"name\":\"apple-mobile-web-app-title\",\"content\":\"Motia\"}],[\"$\",\"meta\",\"21\",{\"name\":\"apple-mobile-web-app-capable\",\"content\":\"yes\"}],[\"$\",\"meta\",\"22\",{\"name\":\"apple-mobile-web-app-status-bar-style\",\"content\":\"black-translucent\"}],[\"$\",\"meta\",\"23\",{\"name\":\"theme-color\",\"content\":\"#18181b\"}],[\"$\",\"meta\",\"24\",{\"name\":\"application-name\",\"content\":\"motia\"}],[\"$\",\"meta\",\"25\",{\"name\":\"mobile-web-app-capable\",\"content\":\"yes\"}],[\"$\",\"meta\",\"26\",{\"name\":\"msapplication-TileColor\",\"content\":\"#18181b\"}],[\"$\",\"meta\",\"27\",{\"name\":\"og:image:secure_url\",\"content\":\"https://dev-motia.vercel.app/og-image-updated-new.jpg\"}],[\"$\",\"meta\",\"28\",{\"name\":\"og:image:alt\",\"content\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"29\",{\"name\":\"canonical\",\"content\":\"https://dev-motia.vercel.app\"}],[\"$\",\"meta\",\"30\",{\"property\":\"og:title\",\"content\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"31\",{\"property\":\"og:description\",\"content\":\"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud.\"}],[\"$\",\"meta\",\"32\",{\"property\":\"og:url\",\"content\":\"https://dev-motia.vercel.app\"}],[\"$\",\"meta\",\"33\",{\"property\":\"og:site_name\",\"content\":\"Motia\"}],[\"$\",\"meta\",\"34\",{\"property\":\"og:locale\",\"content\":\"en_US\"}],[\"$\",\"meta\",\"35\",{\"property\":\"og:image\",\"content\":\"https://dev-motia.vercel.app/og-image-updated-new.jpg\"}],[\"$\",\"meta\",\"36\",{\"property\":\"og:image:width\",\"content\":\"1200\"}],[\"$\",\"meta\",\"37\",{\"property\":\"og:image:height\",\"content\":\"630\"}],[\"$\",\"meta\",\"38\",{\"property\":\"og:image:alt\",\"content\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"39\",{\"property\":\"og:image:type\",\"content\":\"image/jpeg\"}],[\"$\",\"meta\",\"40\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"$\",\"meta\",\"41\",{\"name\":\"twitter:card\",\"content\":\"summary_large_image\"}],[\"$\",\"meta\",\"42\",{\"name\":\"twitter:site\",\"content\":\"@motiadev\"}],[\"$\",\"meta\",\"43\",{\"name\":\"twitter:creator\",\"content\":\"@motiadev\"}],[\"$\",\"meta\",\"44\",{\"name\":\"twitter:title\",\"content\":\"Motia - Unified Backend Framework for APIs, Events and AI Agents\"}],[\"$\",\"meta\",\"45\",{\"name\":\"twitter:description\",\"content\":\"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud.\"}],[\"$\",\"meta\",\"46\",{\"name\":\"twitter:image\",\"content\":\"https://dev-motia.vercel.app/og-image-updated-new.jpg\"}],[\"$\",\"link\",\"47\",{\"rel\":\"icon\",\"href\":\"/icon.png?v=2\",\"type\":\"image/png\"}],[\"$\",\"link\",\"48\",{\"rel\":\"apple-touch-icon\",\"href\":\"/favicon.png?v=2\",\"type\":\"image/png\"}],[\"$\",\"link\",\"49\",{\"rel\":\"mask-icon\",\"href\":\"/favicon.png\",\"color\":\"#18181b\"}]],\"error\":null,\"digest\":\"$undefined\"}\n"])
-        </script>
-        <script>
-            self.__next_f.push([1, "13:{\"metadata\":\"$19:metadata\",\"error\":null,\"digest\":\"$undefined\"}\n"])
-        </script>
-    </body>
+        <div class="my-[72px] h-[1px] w-full bg-white/20"></div>
+        <div class="mx-auto flex w-full max-w-[760px] flex-col gap-[40px]">
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              Information We Collect
+            </h2>
+            <p>
+              We collect information to provide better services to all our
+              users. The information we collect falls into
+              <span
+                class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent"
+                >three main categories</span
+              >
+              : account information, usage analytics, and support
+              communications.
+            </p>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              Account Information
+            </h2>
+            <p>When you create a Obiya account, we collect:</p>
+            <ul class="list-disc space-y-[12px] ml-[20px] mt-[16px]">
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Basic Profile Data:</span
+                >
+                Email address, name, and account details and preferences
+              </li>
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Billing Information:</span
+                >
+                Payment details for paid plans (processed securely by
+                third-party providers)
+              </li>
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Project Metadata:</span
+                >
+                Project names, configurations, and deployment settings
+              </li>
+            </ul>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              Usage Analytics
+            </h2>
+            <p>
+              To improve Obiya, we collect
+              <span
+                class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent"
+                >completely anonymized usage analytics</span
+              >
+              . This includes command usage patterns, performance metrics, and
+              error frequencies. All analytics data is aggregated and cannot be
+              traced back to individual users.
+            </p>
+            <p class="mt-[16px]">
+              You can disable analytics collection at any time. More details on
+              this in our
+              <a
+                href="/telemetry"
+                class="text-[#5AC5FF] hover:text-white underline"
+                >Telemetry page</a
+              >
+              .
+            </p>
+          </section>
+          <section
+            class="text-[18px] text-white/60 leading-[150%] font-sans relative overflow-hidden border-l-[3px] border-[#5AC5FF] bg-[#17181F] p-[32px]"
+          >
+            <img
+              alt="Privacy Glow"
+              aria-hidden="true"
+              loading="lazy"
+              width="794"
+              height="612"
+              decoding="async"
+              data-nimg="1"
+              class="pointer-events-none absolute top-0 left-0 z-0"
+              style="color: transparent"
+              src="/_next/static/media/bgManifestoDeclaration.7c2bd6ee.svg"
+            />
+            <div class="relative flex flex-col gap-[20px]">
+              <h2
+                class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+              >
+                Data Protection Principles
+              </h2>
+              <p>
+                We follow strict data protection principles designed to
+                <span
+                  class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent"
+                  >respect your privacy and maintain your trust</span
+                >
+                . These aren &#x27;t just policies - they &#x27;re commitments.
+              </p>
+              <ul class="list-inside list-disc space-y-[16px]">
+                <li>
+                  <span class="font-medium text-white"
+                    >Minimal Data Collection:</span
+                  >
+                  We only collect data that &#x27;s necessary to provide and
+                  improve our services.
+                </li>
+                <li>
+                  <span class="font-medium text-white"
+                    >Purpose Limitation:</span
+                  >
+                  Data is used only for the purposes we &#x27;ve disclosed to
+                  you.
+                </li>
+                <li>
+                  <span class="font-medium text-white">Data Minimization:</span>
+                  We retain data only as long as necessary and delete it when it
+                  is no longer needed.
+                </li>
+                <li>
+                  <span class="font-medium text-white"
+                    >Security by Design:</span
+                  >
+                  All systems are built with privacy and security as
+                  foundational requirements.
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              How We Use Your Information
+            </h2>
+            <p>We use the information we collect to:</p>
+            <ul class="list-disc space-y-[12px] ml-[20px] mt-[16px]">
+              <li>Provide, maintain, and improve Obiya services</li>
+              <li>Process transactions and send related information</li>
+              <li>Send technical notices, updates, and support messages</li>
+              <li>
+                Respond to your comments, questions, and customer service
+                requests
+              </li>
+              <li>Develop new features and functionality</li>
+              <li>Monitor and analyze trends, usage, and activities</li>
+            </ul>
+            <p class="mt-[16px]">
+              <span
+                class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent"
+                >We never sell your personal data</span
+              >
+              to third parties or use it for advertising purposes.
+            </p>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              Data Sharing and Disclosure
+            </h2>
+            <p>
+              We may share your information in the following limited
+              circumstances:
+            </p>
+            <ul class="list-disc space-y-[12px] ml-[20px] mt-[16px]">
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Service Providers:</span
+                >
+                With trusted third-party services that help us operate (hosting,
+                payment processing, support)
+              </li>
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Legal Requirements:</span
+                >
+                When required by law or to protect our rights and users
+                &#x27;safety
+              </li>
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Business Transfers:</span
+                >
+                In connection with mergers, acquisitions, or asset sales (with
+                user notification)
+              </li>
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >With Your Consent:</span
+                >
+                When you explicitly authorize us to share specific information
+              </li>
+            </ul>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              Data Security
+            </h2>
+            <p>
+              We implement comprehensive security measures to protect your
+              information, including access controls, regular security audits,
+              and employee training on data protection.
+            </p>
+            <p class="mt-[16px]">
+              While we strive to protect your personal information, no method of
+              transmission over the internet is 100% secure. We continuously
+              improve our security practices and will notify you of any
+              significant data breaches as required by law.
+            </p>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              Your Rights and Choices
+            </h2>
+            <p>You have several rights regarding your personal information:</p>
+            <ul class="list-disc space-y-[12px] ml-[20px] mt-[16px]">
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Access:</span
+                >
+                Request a copy of the personal information we hold about you
+              </li>
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Correction:</span
+                >
+                Update or correct inaccurate personal information
+              </li>
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Deletion:</span
+                >
+                Request deletion of your personal information (subject to legal
+                obligations)
+              </li>
+              <li>
+                <span
+                  class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                  >Opt-out:</span
+                >
+                Disable analytics collection and marketing communications
+              </li>
+            </ul>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              International Data Transfers
+            </h2>
+            <p>
+              Obiya operates globally, and your information may be transferred
+              to and processed in countries other than your own.
+              <span
+                class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent"
+                >We ensure appropriate safeguards</span
+              >
+              are in place for international transfers, including standard
+              contractual clauses and adequacy decisions.
+            </p>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              Children &#x27;s Privacy
+            </h2>
+            <p>
+              Obiya is not intended for use by children under 13 years of age.
+              We do not knowingly collect personal information from children
+              under 13. If you become aware that a child has provided us with
+              personal information, please contact us immediately.
+            </p>
+          </section>
+          <section class="text-[18px] text-white/60 leading-[150%] font-sans">
+            <h2
+              class="text-[24px] font-semibold text-white font-tasa mb-[20px]"
+            >
+              Changes to This Policy
+            </h2>
+            <p>
+              We may update this Privacy Policy from time to time. We will
+              notify you of any material changes by posting the new Privacy
+              Policy on this page and updating the &quot;Last Updated
+              &quot;date.
+              <span
+                class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                >Significant changes will be communicated</span
+              >
+              via email or prominent notice in the application.
+            </p>
+          </section>
+          <section
+            class="text-[18px] text-white/60 leading-[150%] font-sans mt-[-10px]"
+          >
+            <p>
+              Privacy isn &#x27;t just a policy for us, it &#x27;s a core value.
+              We believe developers should have
+              <span
+                class="font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent"
+                >complete control over their data</span
+              >
+              and clear understanding of how it &#x27;s used to improve the
+              tools they rely on.
+            </p>
+            <p class="mt-[20px]">
+              Questions about this privacy policy or your data? Contact at
+              <span
+                class="bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium"
+                >mike@Obiya.dev</span
+              >
+            </p>
+            <p class="mt-[16px] text-[16px] text-white/40">
+              Last updated: July 2025
+            </p>
+          </section>
+        </div>
+      </div>
+      <div class="relative flex w-full max-w-[1920px] justify-center">
+        <div
+          class="pointer-events-none absolute top-[50px] z-0 flex h-[1px] w-full shrink items-center justify-center"
+        >
+          <img
+            alt="glow"
+            loading="lazy"
+            width="1440"
+            height="783"
+            decoding="async"
+            data-nimg="1"
+            class="w-full opacity-100"
+            style="color: transparent"
+            src="/_next/static/media/footerBlueGlow.bc4b08e2.svg"
+          />
+        </div>
+        <div
+          class="relative flex h-[624px] w-[96%] flex-col items-center justify-end rounded-t-[8px] px-[91px] pt-[160px] max-lg:pt-[0px] max-sm:px-[16px]"
+        >
+          <img
+            alt="Footer Background"
+            loading="lazy"
+            width="1385"
+            height="624"
+            decoding="async"
+            data-nimg="1"
+            class="absolute top-0 left-0 z-0 h-full w-full rounded-t-[8px] object-cover object-top"
+            style="color: transparent"
+            src="/_next/static/media/bgFooter.bb7bcea2.svg"
+          />
+          <div
+            class="tile-bg fade-bottom-large absolute top-0 h-full w-full rounded-[inherit] border-[1px] border-white/40 bg-[#18191D] opacity-60"
+          ></div>
+          <div
+            class="relative z-3 flex h-full w-[1200px] max-w-full flex-col justify-between"
+          >
+            <div
+              class="flex h-full w-full gap-[26px] max-lg:flex-col max-lg:justify-center"
+            >
+              <div class="flex w-full flex-col gap-[26px]">
+                <p
+                  class="gradient-text-white font-tasa text-[28px] font-semibold"
+                >
+                  Join our community
+                </p>
+                <div class="w-fit">
+                  <a
+                    target="_blank"
+                    class="flex cursor-pointer items-center gap-[16px] py-[8px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                    href="https://discord.gg/obiya"
+                  >
+                    <svg
+                      width="19"
+                      height="14"
+                      viewBox="0 0 19 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0847 1.16134C14.8528 0.614454 13.5528 0.224352 12.2171 0.000797362C12.205 -0.00117262 12.1925 0.000528787 12.1815 0.00566772C12.1704 0.0108066 12.1613 0.0191307 12.1553 0.0294952C11.9879 0.316474 11.8026 0.691843 11.6732 0.985709C10.2335 0.774678 8.76909 0.774678 7.32937 0.985709C7.1856 0.658076 7.02224 0.3388 6.84013 0.0294952C6.83417 0.0191307 6.82503 0.0108066 6.81397 0.00566772C6.80291 0.000528787 6.79048 -0.00117262 6.77838 0.000797362C5.44246 0.223493 4.14216 0.613785 2.91073 1.16134C2.90014 1.16514 2.8913 1.17247 2.8858 1.182C0.422946 4.7394 -0.252734 8.20955 0.0785748 11.6361C0.0809497 11.6529 0.0892621 11.6671 0.103512 11.6785C1.53796 12.705 3.14201 13.4891 4.84752 13.9973C4.85957 14.001 4.87251 14.0009 4.88447 13.997C4.89643 13.993 4.90678 13.9855 4.91402 13.9755C5.28056 13.4934 5.60435 12.9849 5.88539 12.4499C5.89123 12.4389 5.89323 12.4264 5.89109 12.4142C5.88895 12.402 5.88278 12.3908 5.87351 12.3822L5.85214 12.3696C5.34076 12.179 4.8453 11.9507 4.37015 11.6866C4.35689 11.6793 4.34703 11.6674 4.34261 11.6533C4.33818 11.6392 4.33954 11.624 4.34641 11.6108L4.36422 11.589C4.46476 11.5163 4.56292 11.4417 4.65871 11.3652C4.66711 11.3586 4.67718 11.3545 4.68784 11.353C4.69851 11.3516 4.70938 11.353 4.71928 11.3571C7.82931 12.73 11.1958 12.73 14.2679 11.3571C14.2781 11.3526 14.2894 11.3509 14.3005 11.3523C14.3117 11.3538 14.3222 11.3582 14.3308 11.3652C14.4266 11.4417 14.5248 11.5163 14.6253 11.589C14.6337 11.5945 14.6404 11.602 14.6449 11.6108C14.6494 11.6196 14.6516 11.6293 14.6511 11.6391C14.6506 11.6489 14.6475 11.6584 14.6422 11.6667C14.6369 11.675 14.6294 11.6818 14.6205 11.6866C14.1474 11.9548 13.6512 12.183 13.1374 12.3684C13.1292 12.3713 13.1218 12.3759 13.1156 12.3818C13.1094 12.3878 13.1047 12.395 13.1018 12.4029C13.0989 12.4105 13.0977 12.4187 13.0983 12.4268C13.0989 12.4349 13.1013 12.4428 13.1053 12.4499C13.3903 12.9837 13.7169 13.4934 14.0755 13.9755C14.0827 13.9855 14.0931 13.993 14.105 13.997C14.117 14.0009 14.1299 14.001 14.142 13.9973C15.8509 13.4919 17.4577 12.7076 18.8931 11.6785C18.9003 11.6737 18.9062 11.6673 18.9105 11.66C18.9148 11.6527 18.9174 11.6445 18.9181 11.6361C19.3147 7.67462 18.2543 4.23316 16.1085 1.18315C16.1066 1.17794 16.1035 1.17325 16.0993 1.16945C16.0952 1.16566 16.0902 1.16287 16.0847 1.16134ZM6.3497 9.54916C5.41277 9.54916 4.64209 8.71807 4.64209 7.69872C4.64209 6.67937 5.39852 5.84713 6.3497 5.84713C7.308 5.84713 8.07155 6.68511 8.0573 7.69872C8.0573 8.71807 7.30087 9.54916 6.3497 9.54916ZM12.6624 9.54916C11.7266 9.54916 10.9548 8.71807 10.9548 7.69872C10.9548 6.67937 11.7112 5.84713 12.6624 5.84713C13.6207 5.84713 14.3854 6.68511 14.37 7.69872C14.37 8.71807 13.6207 9.54916 12.6624 9.54916Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                    <p>Join our Discord</p>
+                  </a>
+                  <a
+                    target="_blank"
+                    class="flex cursor-pointer items-center gap-[16px] py-[8px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                    href="https://github.com/ObiyaDev/obiya"
+                  >
+                    <svg
+                      width="18"
+                      height="17"
+                      viewBox="0 0 18 17"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.00132 0.666016C4.39713 0.666016 0.667969 4.39518 0.667969 8.99935C0.667969 12.6868 3.05339 15.8014 6.36588 16.9056C6.78255 16.9785 6.9388 16.7285 6.9388 16.5098C6.9388 16.3118 6.92838 15.6556 6.92838 14.9577C4.83463 15.3431 4.29297 14.4473 4.1263 13.9785C4.03255 13.7389 3.6263 12.9993 3.27214 12.8014C2.98047 12.6452 2.5638 12.2598 3.26172 12.2493C3.91797 12.2389 4.38672 12.8535 4.54297 13.1035C5.29297 14.3639 6.49088 14.0098 6.97005 13.791C7.04297 13.2493 7.26172 12.8848 7.50132 12.6764C5.64713 12.4681 3.70964 11.7493 3.70964 8.56185C3.70964 7.6556 4.03255 6.9056 4.5638 6.32227C4.48047 6.11393 4.1888 5.25977 4.64714 4.11393C4.64714 4.11393 5.34505 3.89518 6.9388 4.9681C7.60548 4.7806 8.31382 4.68685 9.02215 4.68685C9.73048 4.68685 10.4388 4.7806 11.1055 4.9681C12.6992 3.88477 13.3972 4.11393 13.3972 4.11393C13.8555 5.25977 13.5638 6.11393 13.4805 6.32227C14.0117 6.9056 14.3347 7.64518 14.3347 8.56185C14.3347 11.7598 12.3867 12.4681 10.5326 12.6764C10.8347 12.9368 11.0951 13.4368 11.0951 14.2181C11.0951 15.3327 11.0847 16.2285 11.0847 16.5098C11.0847 16.7285 11.2409 16.9889 11.6576 16.9056C15.0497 15.7604 17.3337 12.5796 17.3347 8.99935C17.3347 4.39518 13.6055 0.666016 9.00132 0.666016Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                    <p>Contribute on Github</p>
+                    <p class="max-sm:hidden">|</p>
+                    <div
+                      class="flex items-center gap-[6px] text-white max-sm:hidden"
+                    >
+                      <svg
+                        width="11"
+                        height="10"
+                        viewBox="0 0 11 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.13678 0.787466C5.27974 0.477517 5.72026 0.477517 5.86322 0.787466L6.95797 3.16088C7.01624 3.2872 7.13595 3.37418 7.2741 3.39056L9.86964 3.6983C10.2086 3.73849 10.3447 4.15744 10.0941 4.38919L8.17517 6.16379C8.07304 6.25824 8.02731 6.39897 8.05443 6.53541L8.56381 9.09902C8.63033 9.43381 8.27395 9.69274 7.9761 9.52602L5.69538 8.24936C5.57399 8.18141 5.42601 8.18141 5.30462 8.24936L3.0239 9.52602C2.72605 9.69274 2.36967 9.43381 2.43619 9.09902L2.94557 6.53541C2.97269 6.39897 2.92696 6.25824 2.82483 6.16379L0.905872 4.38919C0.655272 4.15744 0.791399 3.73849 1.13036 3.6983L3.7259 3.39056C3.86405 3.37418 3.98376 3.2872 4.04203 3.16088L5.13678 0.787466Z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                      <p>
+                        <span class="inline-block animate-pulse">----</span>
+                      </p>
+                    </div>
+                  </a>
+                  <a
+                    target="_blank"
+                    class="flex cursor-pointer items-center gap-[16px] py-[8px] text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                    href="https://x.com/obiyadev"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                    <p>Follow us on Twitter</p>
+                  </a>
+                </div>
+              </div>
+              <div class="flex w-[400px] flex-col max-lg:w-full lg:shrink-0">
+                <div
+                  class="flex items-center justify-end gap-[12px] mb-[24px] max-lg:justify-start"
+                >
+                  <a
+                    target="_blank"
+                    class="text-white/60 transition-colors ease-in-out hover:text-white"
+                    aria-label="Follow us on LinkedIn"
+                    href="https://www.linkedin.com/company/obiyadev"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 19 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4.15234 17.9996H0.306641V5.97656H4.15234V17.9996ZM2.22754 4.32812C1.05859 4.32812 0.111328 3.35742 0.111328 2.16406C0.111328 1.59034 0.339219 1.03989 0.744141 0.634766C1.14912 0.229645 1.69952 0.00170898 2.27324 0.00170898C2.84696 0.00170898 3.39736 0.229645 3.80234 0.634766C4.20727 1.03989 4.43521 1.59034 4.43521 2.16406C4.43521 3.35742 3.48633 4.32812 2.22754 4.32812ZM18.5547 17.9996H14.7168V12.168C14.7168 10.7988 14.6895 9.02344 12.7793 9.02344C10.8418 9.02344 10.5449 10.5117 10.5449 12.0703V17.9996H6.70117V5.97656H10.3809V7.61719H10.4355C10.9707 6.61328 12.2695 5.55469 14.2422 5.55469C18.1348 5.55469 18.8613 8.24219 18.8613 11.7422V17.9996H18.5547Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    target="_blank"
+                    class="text-white/60 transition-colors ease-in-out hover:text-white"
+                    aria-label="Follow us on X (Twitter)"
+                    href="https://x.com/obiyadev"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    target="_blank"
+                    class="text-white/60 transition-colors ease-in-out hover:text-white"
+                    aria-label="Join our Discord"
+                    href="https://discord.gg/obiya"
+                  >
+                    <svg
+                      width="19"
+                      height="14"
+                      viewBox="0 0 19 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.0847 1.16134C14.8528 0.614454 13.5528 0.224352 12.2171 0.000797362C12.205 -0.00117262 12.1925 0.000528787 12.1815 0.00566772C12.1704 0.0108066 12.1613 0.0191307 12.1553 0.0294952C11.9879 0.316474 11.8026 0.691843 11.6732 0.985709C10.2335 0.774678 8.76909 0.774678 7.32937 0.985709C7.1856 0.658076 7.02224 0.3388 6.84013 0.0294952C6.83417 0.0191307 6.82503 0.0108066 6.81397 0.00566772C6.80291 0.000528787 6.79048 -0.00117262 6.77838 0.000797362C5.44246 0.223493 4.14216 0.613785 2.91073 1.16134C2.90014 1.16514 2.8913 1.17247 2.8858 1.182C0.422946 4.7394 -0.252734 8.20955 0.0785748 11.6361C0.0809497 11.6529 0.0892621 11.6671 0.103512 11.6785C1.53796 12.705 3.14201 13.4891 4.84752 13.9973C4.85957 14.001 4.87251 14.0009 4.88447 13.997C4.89643 13.993 4.90678 13.9855 4.91402 13.9755C5.28056 13.4934 5.60435 12.9849 5.88539 12.4499C5.89123 12.4389 5.89323 12.4264 5.89109 12.4142C5.88895 12.402 5.88278 12.3908 5.87351 12.3822L5.85214 12.3696C5.34076 12.179 4.8453 11.9507 4.37015 11.6866C4.35689 11.6793 4.34703 11.6674 4.34261 11.6533C4.33818 11.6392 4.33954 11.624 4.34641 11.6108L4.36422 11.589C4.46476 11.5163 4.56292 11.4417 4.65871 11.3652C4.66711 11.3586 4.67718 11.3545 4.68784 11.353C4.69851 11.3516 4.70938 11.353 4.71928 11.3571C7.82931 12.73 11.1958 12.73 14.2679 11.3571C14.2781 11.3526 14.2894 11.3509 14.3005 11.3523C14.3117 11.3538 14.3222 11.3582 14.3308 11.3652C14.4266 11.4417 14.5248 11.5163 14.6253 11.589C14.6337 11.5945 14.6404 11.602 14.6449 11.6108C14.6494 11.6196 14.6516 11.6293 14.6511 11.6391C14.6506 11.6489 14.6475 11.6584 14.6422 11.6667C14.6369 11.675 14.6294 11.6818 14.6205 11.6866C14.1474 11.9548 13.6512 12.183 13.1374 12.3684C13.1292 12.3713 13.1218 12.3759 13.1156 12.3818C13.1094 12.3878 13.1047 12.395 13.1018 12.4029C13.0989 12.4105 13.0977 12.4187 13.0983 12.4268C13.0989 12.4349 13.1013 12.4428 13.1053 12.4499C13.3903 12.9837 13.7169 13.4934 14.0755 13.9755C14.0827 13.9855 14.0931 13.993 14.105 13.997C14.117 14.0009 14.1299 14.001 14.142 13.9973C15.8509 13.4919 17.4577 12.7076 18.8931 11.6785C18.9003 11.6737 18.9062 11.6673 18.9105 11.66C18.9148 11.6527 18.9174 11.6445 18.9181 11.6361C19.3147 7.67462 18.2543 4.23316 16.1085 1.18315C16.1066 1.17794 16.1035 1.17325 16.0993 1.16945C16.0952 1.16566 16.0902 1.16287 16.0847 1.16134ZM6.3497 9.54916C5.41277 9.54916 4.64209 8.71807 4.64209 7.69872C4.64209 6.67937 5.39852 5.84713 6.3497 5.84713C7.308 5.84713 8.07155 6.68511 8.0573 7.69872C8.0573 8.71807 7.30087 9.54916 6.3497 9.54916ZM12.6624 9.54916C11.7266 9.54916 10.9548 8.71807 10.9548 7.69872C10.9548 6.67937 11.7112 5.84713 12.6624 5.84713C13.6207 5.84713 14.3854 6.68511 14.37 7.69872C14.37 8.71807 13.6207 9.54916 12.6624 9.54916Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+                  </a>
+                  <a
+                    target="_blank"
+                    class="text-white/60 transition-colors ease-in-out hover:text-white"
+                    aria-label="Subscribe to our YouTube channel"
+                    href="https://www.youtube.com/@obiyadev"
+                  >
+                    <svg
+                      width="20"
+                      height="14"
+                      viewBox="0 0 20 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M19.582 2.186c-.217-.815-.856-1.453-1.671-1.671C16.376 0 10.047 0 10.047 0S3.717 0 2.183.515c-.815.218-1.454.856-1.671 1.671C0 3.72 0 7 0 7s0 3.28.512 4.814c.217.815.856 1.453 1.671 1.671 1.534.515 7.864.515 7.864.515s6.329 0 7.864-.515c.815-.218 1.454-.856 1.671-1.671C20 10.28 20 7 20 7s0-3.28-.418-4.814z"
+                        fill="white"
+                      ></path>
+                      <path
+                        d="M8.023 10.053L13.2 7l-5.177-3.053v6.106z"
+                        fill="#000"
+                      ></path>
+                    </svg>
+                  </a>
+                </div>
+                <div
+                  class="flex w-[400px] gap-[32px] max-lg:w-full max-lg:flex-col lg:shrink-0 lg:justify-between"
+                >
+                  <div
+                    class="flex w-fit flex-col items-end gap-[24px] max-lg:w-fit max-lg:items-start"
+                  >
+                    <p
+                      class="cursor-pointer text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                    >
+                      Use Cases
+                    </p>
+                    <p
+                      class="cursor-pointer text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                    >
+                      Integrations
+                    </p>
+                    <a
+                      class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                      href="/telemetry"
+                      >Telemetry</a
+                    >
+                    <a
+                      class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                      href="/toc"
+                      >Terms and conditions</a
+                    >
+                  </div>
+                  <div
+                    class="flex w-fit flex-col items-end gap-[24px] max-lg:w-fit max-lg:items-start"
+                  >
+                    <a
+                      class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                      href="/manifesto"
+                      >Manifesto</a
+                    >
+                    <a
+                      class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                      href="/docs"
+                      >Documentation</a
+                    >
+                    <button
+                      aria-label="Click To Register For Motia Cloud"
+                      class="flex cursor-pointer gap-[4px] font-sans text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                    >
+                      <div
+                        class="rounded-[4px] bg-[#20ABFC]/12 px-[6px] text-[#088CFF]"
+                      >
+                        Join Beta
+                      </div>
+                      <p>Motia Cloud</p>
+                    </button>
+                    <a
+                      class="text-[16px] text-white/60 transition-colors ease-in-out hover:text-white"
+                      href="/privacy-policy"
+                      >Privacy Policy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative w-full">
+              <div class="" style="opacity: 0; transform: translateY(20px)">
+                <img
+                  alt="wordmark"
+                  loading="lazy"
+                  width="1200"
+                  height="263"
+                  decoding="async"
+                  data-nimg="1"
+                  class="object-contain object-bottom"
+                  style="color: transparent"
+                  src="/_next/static/media/footerWordmark.c1f08560.svg"
+                />
+              </div>
+            </div>
+          </div>
+          <img
+            alt="glow"
+            loading="lazy"
+            width="1367"
+            height="824"
+            decoding="async"
+            data-nimg="1"
+            class="pointer-none: absolute right-0 bottom-0 h-full w-[40%] min-w-[290px] object-contain object-right-bottom"
+            style="color: transparent"
+            src="/_next/static/media/footerWordmarkGlow.cd474c60.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <!--$?-->
+    <template id="B:0"></template>
+    <!--/$-->
+    <!--$?-->
+    <template id="B:1"></template>
+    <!--/$-->
+    <script
+      src="/_next/static/chunks/webpack-2fe152f0771b4ef5.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"
+      async=""
+    ></script>
+    <div hidden id="S:0"></div>
+    <script>
+      $RC = function (b, c, e) {
+        c = document.getElementById(c);
+        c.parentNode.removeChild(c);
+        var a = document.getElementById(b);
+        if (a) {
+          b = a.previousSibling;
+          if (e) (b.data = "$!"), a.setAttribute("data-dgst", e);
+          else {
+            e = b.parentNode;
+            a = b.nextSibling;
+            var f = 0;
+            do {
+              if (a && 8 === a.nodeType) {
+                var d = a.data;
+                if ("/$" === d)
+                  if (0 === f) break;
+                  else f--;
+                else ("$" !== d && "$?" !== d && "$!" !== d) || f++;
+              }
+              d = a.nextSibling;
+              e.removeChild(a);
+              a = d;
+            } while (a);
+            for (; c.firstChild; ) e.insertBefore(c.firstChild, a);
+            b.data = "$";
+          }
+          b._reactRetry && b._reactRetry();
+        }
+      };
+      $RC("B:0", "S:0");
+    </script>
+    <div hidden id="S:1"></div>
+    <script>
+      $RC("B:1", "S:1");
+    </script>
+    <script>
+      (self.__next_f = self.__next_f || []).push([0]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '1:"$Sreact.fragment"\n2:I[98372,["8967","static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","5971","static/chunks/5971-2e507bf134c94592.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7177","static/chunks/app/layout-c084c5183d558559.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],"GoogleTagManager"]\n3:I[13899,["8967","static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","5971","static/chunks/5971-2e507bf134c94592.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7177","static/chunks/app/layout-c084c5183d558559.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],""]\n4:I[3886,["8967","static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","5971","static/chunks/5971-2e507bf134c94592.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7177","static/chunks/app/layout-c084c5183d558559.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],"RootProvider"]\n5:I[15155,[],""]\n6:I[55247,[],""]\n7:I[41154,["7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","4345","static/chunks/app/not-found-da71133f03727d5e.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],"default"]\n8:I[87550,["8967","static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","5971","static/chunks/5971-2e507bf134c94592.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7177","static/chunks/app/layout-c084c5183d558559.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],"Analytics"]\n9:I[62390,["8967","static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","6224","static/chunks/6224-6abc9425977663c8.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","8193","static/chunks/8193-31d84b7d795cf6',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'a0.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","2902","static/chunks/app/privacy-policy/page-991deaa7059cad8d.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],"default"]\na:I[58967,["8967","static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","6224","static/chunks/6224-6abc9425977663c8.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","8193","static/chunks/8193-31d84b7d795cf6a0.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","2902","static/chunks/app/privacy-policy/page-991deaa7059cad8d.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],"Image"]\nb:I[61887,["8967","static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","6224","static/chunks/6224-6abc9425977663c8.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","8193","static/chunks/8193-31d84b7d795cf6a0.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","2902","static/chunks/app/privacy-policy/page-991deaa7059cad8d.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],"default"]\nc:I[40712,["8967","static/chunks/8967-389b078a0fbd7423.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","7178","static/chunks/7178-82cb04dc7c21c8dd.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","6224","static/chunks/6224-6abc9425977663c8.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","8193","static/chunks/8193-31d84b7d795cf6a0.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","2902","static/chunks/app/privacy-policy/page-991deaa7059cad8d.js?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF"],"default"]\nd:I[86785,[],"MetadataBoundary"]\nf:I[86785,[],"OutletBoundary"]\n12:I[26191,[],"AsyncMetadataOutlet"]\n14:I[86785,[],"ViewportBoundary"]\n16:I[17030,[],""]\n17:"$Sreact.suspense"\n18:I[26191,[],"AsyncMetadata"]\n:HL["/_next/static/media/0e96d314a90a6138-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["/_next/static/media/569ce4b8f30dc480-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["/_next/static/media/b7ea2ab4a8ad1f81-s.p.woff2","font",{"crossOrigin":"","type',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '":"font/woff2"}]\n:HL["/_next/static/media/f2f91ba921b45b28-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]\n:HL["/_next/static/css/e3bd31e4703eb3c6.css?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","style"]\n:HL["/_next/static/css/e02ae1a7620caecc.css?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","style"]\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '0:{"P":null,"b":"KAVxqVsZA2RbOwnU9qDv4","p":"","c":["","privacy-policy"],"i":false,"f":[[["",{"children":["privacy-policy",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e3bd31e4703eb3c6.css?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/e02ae1a7620caecc.css?dpl=dpl_3ZKQK2atZNKkjyDaG12seqj1CFzF","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","suppressHydrationWarning":true,"children":[["$","head",null,{"children":[["$","$L2",null,{"gtmId":"GTM-P6672CSW"}],["$","script",null,{"type":"text/javascript","dangerouslySetInnerHTML":{"__html":"\\n              !function(){var e,t,n;e=\\"d8f0ce9cae8ae64\\",t=function(){Reo.init({clientID:\\"d8f0ce9cae8ae64\\", source: \\"internal\\"})},(n=document.createElement(\\"script\\")).src=\\"https://static.reo.dev/\\"+e+\\"/reo.js\\",n.defer=!0,n.onload=t,document.head.appendChild(n)}();\\n            "}}],["$","meta",null,{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta",null,{"name":"mobile-web-app-capable","content":"yes"}],["$","meta",null,{"name":"apple-mobile-web-app-capable","content":"yes"}],["$","meta",null,{"name":"apple-touch-fullscreen","content":"yes"}],["$","$L3",null,{"id":"website-jsonld","type":"application/ld+json","strategy":"afterInteractive","dangerouslySetInnerHTML":{"__html":"{\\"@context\\":\\"https://schema.org\\",\\"@type\\":\\"WebSite\\",\\"name\\":\\"Motia - Unified Backend Framework for APIs, Events and AI Agents\\",\\"description\\":\\"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud.\\",\\"url\\":\\"https://motia.dev\\",\\"image\\":[\\"https://motia.dev/og-image-updated-new.jpg\\"]}"}}]]}],["$","body",null,{"suppressHydrationWarning":true,"className":"__variable_356fc9 __variable_9ef920 __variable_ed711f w-screen overflow-x-hidden antialiased","children":[["$","$L3",null,{"async":true,"defer":true,"data-api":"$undefined","data-domain":"motia.dev","data-exclude":"$undefined","src":"https://plausible.io/js/script.file-downloads.hash.outbound-links.pageview-props.revenue.tagged-events.js","integrity":"$undefined","crossOrigin":"$undefined"}],["$","$L3",null,{"id":"next-plausible-init","dangerouslySetInnerHTML":{"__html":"window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }"},"nonce":"$undefined"}],["$","$L4",null,{"children":[["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","$L7",null,{}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L8",null,{}]]}]]}]]}]]}],{"children":["privacy-policy",["$","$1","c",{"children":[null,["$","$L5",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L6",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":[["$","div",null,{"className":"relative flex w-full flex-col items-center bg-black","children":[["$","$L9",null,{}],["$","$La",null,{"src":{"src":"/_next/static/media/bgManifestoPage.f5394aca.svg","height":396,"width":1117,"blurWidth":0,"blurHeight":0},"alt":"Background Glow","aria-hidden":true,"className":"absolute top-0 right-0 max-w-full"}],["$","div",null,{"className":"relative mx-auto w-full max-w-[1200px] pt-[160px] pb-[200px] max-md:px-[16px]","children":[["$","div",null,{"className":"mx-auto w-[660px] max-w-full","children":[["$","$Lb",null,{"className":"text-center","children":"Privacy Policy"}],["$","p",null,{"className":"text-center text-[20px] text-white/80 leading-[140%] font-sans mt-[24px]","children":["Your privacy is fundamental to how we build Motia. This policy explains how we ",["$","span",null,{"className":"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent","children":"collect, use, and protect"}]," your information."]}]]}],["$","div",null,{"className":"my-[72px] h-[1px] w-full bg-white/20"}],["$","div",null,{"className":"mx-auto flex w-full max-w-[760px] flex-col gap-[40px]","children":[["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Information We Collect"}],["$","p",null,{"children":["We collect information to provide better services to all our users. The information we collect falls into ",["$","span",null,{"className":"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent","children":"three main categories"}],": account information, usage analytics, and support communications."]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Account Information"}],["$","p",null,{"children":"When you create a Motia account, we collect:"}],["$","ul",null,{"className":"list-disc space-y-[12px] ml-[20px] mt-[16px]","children":[["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Basic Profile Data:"}]," Email address, name, and account details and preferences"]}],["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Billing Information:"}]," Payment details for paid plans (processed securely by third-party providers)"]}],["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Project Metadata:"}]," Project names, configurations, and deployment settings"]}]]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Usage Analytics"}],["$","p",null,{"children":["To improve Motia, we collect ",["$","span",null,{"className":"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent","children":"completely anonymized usage analytics"}],". This includes command usage patterns, performance metrics, and error frequencies. All analytics data is aggregated and cannot be traced back to individual users."]}],["$","p",null,{"className":"mt-[16px]","children":["You can disable analytics collection at any time. More details on this in our ",["$","a",null,{"href":"/telemetry","className":"text-[#5AC5FF] hover:text-white underline","children":"Telemetry page"}],"."]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans relative overflow-hidden border-l-[3px] border-[#5AC5FF] bg-[#17181F] p-[32px]","children":[["$","$La",null,{"src":{"src":"/_next/static/media/bgManifestoDeclaration.7c2bd6ee.svg","height":612,"width":794,"blurWidth":0,"blurHeight":0},"alt":"Privacy Glow","aria-hidden":true,"className":"pointer-events-none absolute top-0 left-0 z-0"}],["$","div",null,{"className":"relative flex flex-col gap-[20px]","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Data Protection Principles"}],["$","p",null,{"children":["We follow strict data protection principles designed to ",["$","span",null,{"className":"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent","children":"respect your privacy and maintain your trust"}],". These aren\'t just policies - they\'re commitments."]}],["$","ul",null,{"className":"list-inside list-disc space-y-[16px]","children":[["$","li",null,{"children":[["$","span",null,{"className":"font-medium text-white","children":"Minimal Data Collection:"}]," We only collect data that\'s necessary to provide and improve our services."]}],["$","li",null,{"children":[["$","span",null,{"className":"font-medium text-white","children":"Purpose Limitation:"}]," Data is used only for the purposes we\'ve disclosed to you."]}],["$","li",null,{"children":[["$","span",null,{"className":"font-medium text-white","children":"Data Minimization:"}]," We retain data only as long as necessary and delete it when it is no longer needed."]}],["$","li",null,{"children":[["$","span",null,{"className":"font-medium text-white","children":"Security by Design:"}]," All systems are built with privacy and security as foundational requirements."]}]]}]]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"How We Use Your Information"}],["$","p",null,{"children":"We use the information we collect to:"}],["$","ul",null,{"className":"list-disc space-y-[12px] ml-[20px] mt-[16px]","children":[["$","li",null,{"children":"Provide, maintain, and improve Motia services"}],["$","li",null,{"children":"Process transactions and send related information"}],["$","li",null,{"children":"Send technical notices, updates, and support messages"}],["$","li",null,{"children":"Respond to your comments, questions, and customer service requests"}],["$","li",null,{"children":"Develop new features and functionality"}],["$","li",null,{"children":"Monitor and analyze trends, usage, and activities"}]]}],["$","p",null,{"className":"mt-[16px]","children":[["$","span",null,{"className":"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent","children":"We never sell your personal data"}]," to third parties or use it for advertising purposes."]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Data Sharing and Disclosure"}],["$","p",null,{"children":"We may share your information in the following limited circumstances:"}],["$","ul",null,{"className":"list-disc space-y-[12px] ml-[20px] mt-[16px]","children":[["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Service Providers:"}]," With trusted third-party services that help us operate (hosting, payment processing, support)"]}],["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Legal Requirements:"}]," When required by law or to protect our rights and users\' safety"]}],["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Business Transfers:"}]," In connection with mergers, acquisitions, or asset sales (with user notification)"]}],["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"With Your Consent:"}]," When you explicitly authorize us to share specific information"]}]]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Data Security"}],["$","p",null,{"children":"We implement comprehensive security measures to protect your information, including access controls, regular security audits, and employee training on data protection."}],["$","p",null,{"className":"mt-[16px]","children":"While we strive to protect your personal information, no method of transmission over the internet is 100% secure. We continuously improve our security practices and will notify you of any significant data breaches as required by law."}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Your Rights and Choices"}],["$","p",null,{"children":"You have several rights regarding your personal information:"}],["$","ul",null,{"className":"list-disc space-y-[12px] ml-[20px] mt-[16px]","children":[["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Access:"}]," Request a copy of the personal information we hold about you"]}],["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Correction:"}]," Update or correct inaccurate personal information"]}],["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Deletion:"}]," Request deletion of your personal information (subject to legal obligations)"]}],["$","li",null,{"children":[["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Opt-out:"}]," Disable analytics collection and marketing communications"]}]]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"International Data Transfers"}],["$","p",null,{"children":["Motia operates globally, and your information may be transferred to and processed in countries other than your own. ",["$","span",null,{"className":"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent","children":"We ensure appropriate safeguards"}]," are in place for international transfers, including standard contractual clauses and adequacy decisions."]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Children\'s Privacy"}],["$","p",null,{"children":"Motia is not intended for use by children under 13 years of age. We do not knowingly collect personal information from children under 13. If you become aware that a child has provided us with personal information, please contact us immediately."}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans","children":[["$","h2",null,{"className":"text-[24px] font-semibold text-white font-tasa mb-[20px]","children":"Changes to This Policy"}],["$","p",null,{"children":["We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new Privacy Policy on this page and updating the \\"Last Updated\\" date. ",["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"Significant changes will be communicated"}]," via email or prominent notice in the application."]}]]}],["$","section",null,{"className":"text-[18px] text-white/60 leading-[150%] font-sans mt-[-10px]","children":[["$","p",null,{"children":["Privacy isn\'t just a policy for us, it\'s a core value. We believe developers should have ",["$","span",null,{"className":"font-medium bg-gradient-to-l from-[#5AC5FF] to-[#FFFFFF] bg-clip-text text-transparent","children":"complete control over their data"}]," and clear understanding of how it\'s used to improve the tools they rely on."]}],["$","p",null,{"className":"mt-[20px]","children":["Questions about this privacy policy or your data? Contact at ",["$","span",null,{"className":"bg-gradient-to-r from-[#5AC5FF] to-[#C4E5FF] bg-clip-text text-transparent font-medium","children":"mike@motia.dev"}]]}],["$","p",null,{"className":"mt-[16px] text-[16px] text-white/40","children":"Last updated: July 2025"}]]}]]}]]}],["$","$Lc",null,{}]]}],["$","$Ld",null,{"children":"$Le"}],null,["$","$Lf",null,{"children":["$L10","$L11",["$","$L12",null,{"promise":"$@13"}]]}]]}],{},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","MbCoXUTHF10yixOMejirA",{"children":[["$","$L14",null,{"children":"$L15"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],null]}],false]],"m":"$undefined","G":["$16","$undefined"],"s":false,"S":false}\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        'e:["$","$17",null,{"fallback":null,"children":["$","$L18",null,{"promise":"$@19"}]}]\n11:null\n15:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]\n10:null\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '19:{"metadata":[["$","title","0",{"children":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","1",{"name":"description","content":"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud."}],["$","meta","2",{"name":"keywords","content":"AI,automation,event-driven workflows,software engineering,backend automation,developer tools"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","meta","4",{"name":"googlebot","content":"index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"}],["$","meta","5",{"name":"instagram:card","content":"summary_large_image"}],["$","meta","6",{"name":"instagram:title","content":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","7",{"name":"instagram:description","content":"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud."}],["$","meta","8",{"name":"instagram:image","content":"https://dev-motia.vercel.app/og-image-updated-new.jpg"}],["$","meta","9",{"name":"reddit:title","content":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","10",{"name":"reddit:description","content":"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud."}],["$","meta","11",{"name":"reddit:image","content":"https://dev-motia.vercel.app/og-image-updated-new.jpg"}],["$","meta","12",{"name":"linkedin:card","content":"summary_large_image"}],["$","meta","13",{"name":"linkedin:title","content":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","14",{"name":"linkedin:description","content":"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud."}],["$","meta","15",{"name":"linkedin:image","content":"https://dev-motia.vercel.app/og-image-updated-new.jpg"}],["$","meta","16",{"name":"twitter:url","content":"https://dev-motia.vercel.app"}],["$","meta","17",{"name":"twitter:domain","content":"motia.dev"}],["$","meta","18",{"name":"twitter:image:alt","content":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","19",{"name":"format-detection","content":"telephone=no"}],["$","meta","20",{"name":"apple-mobile-web-app-title","content":"Motia"}],["$","meta","21",{"name":"apple-mobile-web-app-capable","content":"yes"}],["$","meta","22",{"name":"apple-mobile-web-app-status-bar-style","content":"black-translucent"}],["$","meta","23",{"name":"theme-color","content":"#18181b"}],["$","meta","24",{"name":"application-name","content":"motia"}],["$","meta","25",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","26",{"name":"msapplication-TileColor","content":"#18181b"}],["$","meta","27",{"name":"og:image:secure_url","content":"https://dev-motia.vercel.app/og-image-updated-new.jpg"}],["$","meta","28",{"name":"og:image:alt","content":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","29",{"name":"canonical","content":"https://dev-motia.vercel.app"}],["$","meta","30",{"property":"og:title","content":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","31",{"property":"og:description","content":"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud."}],["$","meta","32",{"property":"og:url","content":"https://dev-motia.vercel.app"}],["$","meta","33",{"property":"og:site_name","content":"Motia"}],["$","meta","34",{"property":"og:locale","content":"en_US"}],["$","meta","35",{"property":"og:image","content":"https://dev-motia.vercel.app/og-image-updated-new.jpg"}],["$","meta","36",{"property":"og:image:width","content":"1200"}],["$","meta","37",{"property":"og:image:height","content":"630"}],["$","meta","38",{"property":"og:image:alt","content":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","39",{"property":"og:image:type","content":"image/jpeg"}],["$","meta","40",{"property":"og:type","content":"website"}],["$","meta","41",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","42",{"name":"twitter:site","content":"@motiadev"}],["$","meta","43",{"name":"twitter:creator","content":"@motiadev"}],["$","meta","44",{"name":"twitter:title","content":"Motia - Unified Backend Framework for APIs, Events and AI Agents"}],["$","meta","45",{"name":"twitter:description","content":"Multi-language cloud functions runtime for API endpoints, background jobs, and agentic workflows using Motia Steps. Preview them in the Workbench, ship to zero-config infrastructure, and monitor in the Cloud."}],["$","meta","46",{"name":"twitter:image","content":"https://dev-motia.vercel.app/og-image-updated-new.jpg"}],["$","link","47",{"rel":"icon","href":"/icon.png?v=2","type":"image/png"}],["$","link","48",{"rel":"apple-touch-icon","href":"/favicon.png?v=2","type":"image/png"}],["$","link","49",{"rel":"mask-icon","href":"/favicon.png","color":"#18181b"}]],"error":null,"digest":"$undefined"}\n',
+      ]);
+    </script>
+    <script>
+      self.__next_f.push([
+        1,
+        '13:{"metadata":"$19:metadata","error":null,"digest":"$undefined"}\n',
+      ]);
+    </script>
+  </body>
 </html>
