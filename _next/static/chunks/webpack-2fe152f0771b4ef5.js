@@ -81,63 +81,70 @@
     (r.f = {}),
     (r.e = (e) =>
       Promise.all(Object.keys(r.f).reduce((t, a) => (r.f[a](e, t), t), []))),
-    (r.u = (e) =>
-      7752 === e
-        ? "static/chunks/7752-7d741229f9540736.js"
-        : "static/chunks/" +
-          ({ 2104: "c149db39", 3340: "13838aeb", 3683: "4760e086" }[e] || e) +
-          "." +
-          {
-            124: "d425cf4da057af34",
-            334: "98ff80bfaf7814a6",
-            453: "06b4b00518bc41c0",
-            762: "06ffe2f481006413",
-            798: "b7639f1bc0b7a90e",
-            799: "cbf7c7fb199ae5cf",
-            1102: "a02cf2aefd938a17",
-            1149: "44a9dc1243880c74",
-            1152: "449fd88b188eb73d",
-            1613: "0a58e30cb90baabd",
-            1842: "49df79966f380235",
-            1942: "6b32a1202934aa0e",
-            2104: "98f77b877f679bd5",
-            2323: "9c400cc84c9d652e",
-            3051: "913aab582f091500",
-            3278: "1dd46fbff2ba871d",
-            3340: "f392be39b63c631c",
-            3368: "9140507d23e1b5d8",
-            3683: "107d9c90d426aeb1",
-            3749: "897cc75caa29139e",
-            4290: "9283865ace1c03e8",
-            4492: "fb5b9c5dd1a658fc",
-            4765: "82784f9003e8f5b3",
-            4851: "76cd9490a42f229a",
-            5034: "a723f465d23c9289",
-            5254: "713d107d12541bf8",
-            5556: "b4f38292028ed63a",
-            5826: "4665c9d43e0ebdef",
-            6333: "63298d3d3923e73f",
-            6534: "7b4f37ee73c851d3",
-            6605: "9be052352ce4bf00",
-            6627: "3c7ba41795066a10",
-            6660: "c45c5009daf80e63",
-            6777: "6819769084a97a38",
-            7188: "ec8c1013489c6858",
-            7334: "2255fbbe9daaf50a",
-            7444: "bbe300c9f534aba3",
-            7749: "c8dd4fc54edb7874",
-            7800: "50c605dce97c4d64",
-            8106: "3d6adfc9bf3b26b3",
-            8148: "61344075d171d52d",
-            8389: "7567c8b824ba2e34",
-            8417: "7f01ad291c52bd5e",
-            8562: "fc7af7cb45d7345b",
-            9487: "194ee12121f5bc8e",
-            9647: "a21106a9dd95de5d",
-            9714: "de044b9b8a9f69e7",
-            2883: "3629317346dba03c",
-          }[e] +
-          ".js"),
+    (r.u = (e) => {
+      // Handle specific chunk mappings first
+      if (7752 === e) return "static/chunks/7752-7d741229f9540736.js";
+      
+      // Handle other chunks with proper fallback
+      const chunkId = e;
+      const chunkHash = {
+        124: "d425cf4da057af34",
+        334: "98ff80bfaf7814a6",
+        453: "06b4b00518bc41c0",
+        762: "06ffe2f481006413",
+        798: "b7639f1bc0b7a90e",
+        799: "cbf7c7fb199ae5cf",
+        1102: "a02cf2aefd938a17",
+        1149: "44a9dc1243880c74",
+        1152: "449fd88b188eb73d",
+        1613: "0a58e30cb90baabd",
+        1842: "49df79966f380235",
+        1942: "6b32a1202934aa0e",
+        2104: "98f77b877f679bd5",
+        2323: "9c400cc84c9d652e",
+        3051: "913aab582f091500",
+        3278: "1dd46fbff2ba871d",
+        3340: "f392be39b63c631c",
+        3368: "9140507d23e1b5d8",
+        3683: "107d9c90d426aeb1",
+        3749: "897cc75caa29139e",
+        4290: "9283865ace1c03e8",
+        4492: "fb5b9c5dd1a658fc",
+        4765: "82784f9003e8f5b3",
+        4851: "76cd9490a42f229a",
+        5034: "a723f465d23c9289",
+        5254: "713d107d12541bf8",
+        5556: "b4f38292028ed63a",
+        5826: "4665c9d43e0ebdef",
+        6333: "63298d3d3923e73f",
+        6534: "7b4f37ee73c851d3",
+        6605: "9be052352ce4bf00",
+        6627: "3c7ba41795066a10",
+        6660: "c45c5009daf80e63",
+        6777: "6819769084a97a38",
+        7188: "ec8c1013489c6858",
+        7334: "2255fbbe9daaf50a",
+        7444: "bbe300c9f534aba3",
+        7749: "c8dd4fc54edb7874",
+        7800: "50c605dce97c4d64",
+        8106: "3d6adfc9bf3b26b3",
+        8148: "61344075d171d52d",
+        8389: "7567c8b824ba2e34",
+        8417: "7f01ad291c52bd5e",
+        8562: "fc7af7cb45d7345b",
+        9487: "194ee12121f5bc8e",
+        9647: "a21106a9dd95de5d",
+        9714: "de044b9b8a9f69e7",
+        2883: "3629317346dba03c",
+      }[chunkId];
+      
+      if (chunkHash) {
+        return "static/chunks/" + chunkId + "-" + chunkHash + ".js";
+      }
+      
+      // Fallback for unknown chunks
+      return "static/chunks/" + chunkId + ".js";
+    }),
     (r.miniCssF = (e) => {}),
     (r.g = (function () {
       if ("object" == typeof globalThis) return globalThis;
