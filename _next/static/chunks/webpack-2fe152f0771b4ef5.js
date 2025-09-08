@@ -190,9 +190,9 @@
             l.bind(null, void 0, { type: "timeout", target: c }),
             12e4
           );
-        // (c.onerror = l.bind(null, c.onerror)),
-        //   (c.onload = l.bind(null, c.onload)),
-        //   n && document.head.appendChild(c);
+        (c.onerror = l.bind(null, c.onerror)),
+          (c.onload = l.bind(null, c.onload)),
+          n && document.head.appendChild(c);
       };
     })(),
     (r.r = (e) => {
